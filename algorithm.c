@@ -18,6 +18,7 @@ typedef struct {
   int score;
   int place;
   int expected;
+  int place_diff;
 } Car;
 
 /*Initializes number of cars present for match*/
@@ -37,18 +38,7 @@ void add_car(Car *match, int car) {
   scanf("%d", &match[car].HR);
   match[car].init = 1;
 }
-
-/*Initializes rank for cars
-void initialize_rank(Car *match, int num_cars) {
-  int i;
-  for(i = 0; i < num_cars; i++) {
-    printf("Enter initial rank for car %d: ", i);
-    scanf("%d", &match[i].HR);
-    match[i].init = 1;
-    add_car(match, i);
-  }
-}*/
-
+/*Calculates expected placement based on HR*/
 void expected_place(Car *match, int num_cars) {
   int i, j, place;
   for(i = 0; i < num_cars; i++) {
@@ -62,25 +52,33 @@ void expected_place(Car *match, int num_cars) {
   }
 }
 
-int check_place(int* placement, int num_cars) {
-  int i;
-}
-
 void match_data(Car *match, int num_cars) {
   int i;
   int* placement = calloc(sizeof(int), num_cars);
   for(i = 0; i < num_cars; i++) {
     printf("Enter placement for car %d: ", i);
     scanf("%d", &match[i].place);
-    if(match[i].place > 4 || match[i].place < 1 || check_place(placement, num_cars)) {
-      
+    if(match[i].place <= 4 && match[i].place >= 1) {
+      if(placement[match[i].place - 1]) {
+        i--;
+        printf("This placement has already been used\n");
+      }
+      else {
+        match[i].place_diff = match[i].expected - match[i].place;
+        placement[match[i].place - 1] = 1;
+      }
+    }
+    else {
+      printf("Invalid placement\n");
+      i--;
     }
   }
-  expected_place(match, num_cars);
+  //expected_place(match, num_cars);
   free(placement);
 }
 
 void compare(Car one, Car two) {
+  int rank_diff = one.HR - two.HR, place_diff = one.place - two.place;
   
 }
 
@@ -125,6 +123,7 @@ int main(int argc, char* argv[]) {
         for(i = 0; i < num_cars; i++) {
           add_car(match, i);
         }
+        expected_place(match, num_cars);
         break;
       case MATCH_DATA:
         if(num_cars || match[num_cars - 1].init) {
@@ -143,7 +142,7 @@ int main(int argc, char* argv[]) {
       case ADD_CAR:
         if(num_cars && num_cars < MAX_CARS) {
           num_cars++;
-          add_car(match, num_cars);
+          add_car(match, num_cars - 1);
           printf("Car %d added\n", num_cars);
         }
         else if(!num_cars) {
@@ -170,14 +169,4 @@ int main(int argc, char* argv[]) {
         printf("Enter value 1-%d\n", QUIT);
     }
   } while(choice != QUIT);
-  /*initialize_num_cars(&num_cars);
-  initialize_rank(match, num_cars);
-  for(i = 0; i < num_cars; i++) {
-    printf("Car %d: %d\n", i, match[i].HR);
-  }
-  while(scanf("Enter match data? Y/N", &yn) && yn == 'Y') {
-    for(i = 0; i < num_cars; i++) {
-      scanf("Enter placement: ", &match[i].score);
-    }
-  }*/
 }
