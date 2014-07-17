@@ -51,7 +51,7 @@ void expected_place(Car *match, int num_cars) {
     match[i].expected = place;
   }
 }
-
+/*collection of match data, placement*/
 void match_data(Car *match, int num_cars) {
   int i;
   int* placement = calloc(sizeof(int), num_cars);
@@ -76,15 +76,14 @@ void match_data(Car *match, int num_cars) {
   //expected_place(match, num_cars);
   free(placement);
 }
-
+/*DEE ALGORITHM*/
 void compare(Car one, Car two) {
-  int rank_diff = one.HR - two.HR, place_diff = one.place - two.place, 
-        pool = (one.HR + two.HR) / 2;
+  int rank_diff, place_diff = one.place - two.place, pool = (one.HR + two.HR) / 2;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
   //Higher ranked car
-  if(rank_diff > 0) {
+  if(one.HR > two.HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
       
@@ -96,7 +95,13 @@ void compare(Car one, Car two) {
   }
   //Lower/equal ranked car
   else {
-    
+    //Came in
+    if(place_diff < 0) {
+      
+    }
+    else {
+
+    }
   }
 }
 
@@ -112,8 +117,8 @@ void run_match(Car *match, int num_cars) {
 void show_status(Car *match, int num_cars) {
   int i;
   for(i = 0; i < num_cars; i++) {
-    printf("Car %d: HR: %d Placement: %d Expected: %d\n", 
-      i, match[i].HR, match[i].place, match[i].expected);
+    printf("Car %d: HR: %d Placement: %d Expected: %d Score: %d\n", 
+      i, match[i].HR, match[i].place, match[i].expected, match[i].score);
   }
 }
 
