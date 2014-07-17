@@ -79,17 +79,24 @@ void match_data(Car *match, int num_cars) {
 
 void compare(Car one, Car two) {
   int rank_diff = one.HR - two.HR, place_diff = one.place - two.place, 
-        pool = one.HR + two.HR;
+        pool = (one.HR + two.HR) / 2;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
   //Higher ranked car
   if(rank_diff > 0) {
-    
+    //Came in better placement, expected
+    if(place_diff < 0) {
+      
+    }
+    //Came behind lower car, upset
+    else {
+
+    }
   }
   //Lower/equal ranked car
   else {
-
+    
   }
 }
 
