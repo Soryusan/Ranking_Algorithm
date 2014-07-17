@@ -85,7 +85,7 @@ void compare(Car one, Car two) {
   //check to see if car expected to place ahead of other
   //Higher ranked car
   if(rank_diff > 0) {
-
+    
   }
   //Lower/equal ranked car
   else {
