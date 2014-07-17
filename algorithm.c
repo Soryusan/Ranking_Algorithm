@@ -78,14 +78,14 @@ void match_data(Car *match, int num_cars) {
 }
 
 void compare(Car one, Car two) {
-  int rank_diff = one.HR - two.HR, place_diff = one.place - two.place, 
+  int rank_diff = one.HR - two.HR, place_diff = one.place - two.place,
         pool = one.HR + two.HR;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
   //Higher ranked car
   if(rank_diff > 0) {
-    
+
   }
   //Lower/equal ranked car
   else {
@@ -105,7 +105,7 @@ void run_match(Car *match, int num_cars) {
 void show_status(Car *match, int num_cars) {
   int i;
   for(i = 0; i < num_cars; i++) {
-    printf("Car %d: HR: %d Placement: %d Expected: %d\n", 
+    printf("Car %d: HR: %d Placement: %d Expected: %d\n",
       i, match[i].HR, match[i].place, match[i].expected);
   }
 }
@@ -155,6 +155,7 @@ int main(int argc, char* argv[]) {
         if(num_cars && num_cars < MAX_CARS) {
           num_cars++;
           add_car(match, num_cars - 1);
+          expected_place(match, num_cars);
           printf("Car %d added\n", num_cars);
         }
         else if(!num_cars) {
