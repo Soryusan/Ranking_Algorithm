@@ -38,15 +38,36 @@ void add_car(Car *match, int car) {
   scanf("%d", &match[car].HR);
   match[car].init = 1;
 }
+
+/*int check_same_HR(Car *match, int num_cars) {
+  int i, j, same = 0;
+  for(i = 0; i < num_cars; i++) {
+    for(j = 0; j < num_cars; j++) {
+      if(i != j && match[i].HR == match[j].HR) {
+        same++;
+      }
+    }
+  }
+  return same / 2;
+}*/
+
 /*Calculates expected placement based on HR*/
 void expected_place(Car *match, int num_cars) {
-  int i, j, place;
+  int i, j, place, same = 0;
+  //same = check_same_HR(match, num_cars);
   for(i = 0; i < num_cars; i++) {
-    place = 4;
+    place = 1;
+    same = check_same_HR(match, num_cars);
     for(j = 0; j < num_cars; j++) {
-      if(match[i].HR > match[j].HR) {
-        place--;
+      if(match[i].HR < match[j].HR) {
+        place++;
       }
+      
+      /*if(same && i != j && match[i].HR < match[j].HR) {
+        printf("%d same %d one %d two\n", same, match[i].HR, match[j].HR);
+        place -= same;
+        same = 0;
+      }*/
     }
     match[i].expected = place;
   }
@@ -78,7 +99,7 @@ void match_data(Car *match, int num_cars) {
 }
 /*DEE ALGORITHM*/
 void compare(Car one, Car two) {
-  int rank_diff, place_diff = one.place - two.place, pool = (one.HR + two.HR) / 2;
+  int rank_diff = one.HR - two.HR, place_diff = one.place - two.place, pool = (one.HR + two.HR);
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
@@ -90,15 +111,16 @@ void compare(Car one, Car two) {
     }
     //Came behind lower car, upset
     else {
-
+      
     }
   }
   //Lower/equal ranked car
   else {
-    //Came in
+    //Came ahead of better car, upset
     if(place_diff < 0) {
       
     }
+    //Came behind better car, expected
     else {
 
     }
