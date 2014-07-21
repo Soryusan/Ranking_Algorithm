@@ -97,33 +97,40 @@ void match_data(Car *match, int num_cars) {
   //expected_place(match, num_cars);
   free(placement);
 }
+
 /*DEE ALGORITHM*/
-void compare(Car one, Car two) {
-  int rank_diff = one.HR - two.HR, place_diff = one.place - two.place, pool = (one.HR + two.HR);
+void compare(Car *one, Car *two) {
+  int rank_diff = one->HR - two->HR, place_diff = one->place - two->place, pool = (one->HR + two->HR);
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
   //Higher ranked car
-  if(one.HR > two.HR) {
+  if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      
+      one->score = .65 * pool;
+      /*if(one.place  < one.expected) {
+        one.score = one.score * (one.expected - one.place);
+      }*/
     }
     //Came behind lower car, upset
     else {
-      
+      one->score = .25 * pool;
     }
   }
   //Lower/equal ranked car
   else {
     //Came ahead of better car, upset
     if(place_diff < 0) {
-      
+      one->score = .75 * pool;
     }
     //Came behind better car, expected
     else {
-
+      one->score = .35 * pool;
     }
+  }
+  if(one->place < one->expected) {
+    one->score = one->score * (one->expected - one->place);
   }
 }
 
@@ -131,9 +138,15 @@ void run_match(Car *match, int num_cars) {
   int i,j;
   for(i = 0; i < num_cars; i++) {
     for(j = 0; j < num_cars; j++) {
-      compare(match[i], match[j]);
+      if(i != j){
+        compare(&match[i], &match[j]);
+      }
     }
+    match[i].HR = match[i].score + match[i].HR;
   }
+  /*for(i = 0; i < num_scars; i++) {
+    match[i].HR = match[i].score + match[i].HR;
+  }*/
 }
 
 void show_status(Car *match, int num_cars) {
