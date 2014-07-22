@@ -1,0 +1,248 @@
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Number of cars: Enter initial rank for car 0: Enter initial rank for car 1: Enter initial rank for car 2: Enter initial rank for car 3: 1 max place
+1 max place
+1 max place
+1 max place
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Enter placement for car 0: Enter placement for car 1: Enter placement for car 2: Enter placement for car 3: 
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Car 0: HR: 100 Placement: 1 Expected: 1 Score: 0
+
+Car 1: HR: 100 Placement: 2 Expected: 1 Score: 0
+
+Car 2: HR: 100 Placement: 3 Expected: 1 Score: 0
+
+Car 3: HR: 100 Placement: 4 Expected: 1 Score: 0
+
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+100 one HR 100 two HR 0 one score 0 two score 200 pool -1 place_diff 0 rank_diff
+5 one new score
+100 one HR 100 two HR 5 one score 0 two score 200 pool -2 place_diff 0 rank_diff
+10 one new score
+100 one HR 100 two HR 10 one score 0 two score 200 pool -3 place_diff 0 rank_diff
+15 one new score
+
+100 one HR 100 two HR 0 one score 15 two score 200 pool 1 place_diff 0 rank_diff
+4 one new score
+100 one HR 100 two HR 4 one score 0 two score 200 pool -1 place_diff 0 rank_diff
+9 one new score
+100 one HR 100 two HR 9 one score 0 two score 200 pool -2 place_diff 0 rank_diff
+14 one new score
+
+100 one HR 100 two HR 0 one score 15 two score 200 pool 2 place_diff 0 rank_diff
+4 one new score
+100 one HR 100 two HR 4 one score 14 two score 200 pool 1 place_diff 0 rank_diff
+8 one new score
+100 one HR 100 two HR 8 one score 0 two score 200 pool -1 place_diff 0 rank_diff
+13 one new score
+
+100 one HR 100 two HR 0 one score 15 two score 200 pool 3 place_diff 0 rank_diff
+4 one new score
+100 one HR 100 two HR 4 one score 14 two score 200 pool 2 place_diff 0 rank_diff
+8 one new score
+100 one HR 100 two HR 8 one score 13 two score 200 pool 1 place_diff 0 rank_diff
+12 one new score
+
+Car 0: HR: 115 Placement: 1 Expected: 1 Score: 0
+
+Car 1: HR: 114 Placement: 2 Expected: 1 Score: 0
+
+Car 2: HR: 113 Placement: 3 Expected: 1 Score: 0
+
+Car 3: HR: 112 Placement: 4 Expected: 1 Score: 0
+
+4 max place
+4 max place
+4 max place
+4 max place
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Enter placement for car 0: Enter placement for car 1: Enter placement for car 2: Enter placement for car 3: 
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Car 0: HR: 115 Placement: 3 Expected: 1 Score: 0
+
+Car 1: HR: 114 Placement: 4 Expected: 2 Score: 0
+
+Car 2: HR: 113 Placement: 1 Expected: 3 Score: 0
+
+Car 3: HR: 112 Placement: 2 Expected: 4 Score: 0
+
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+115 one HR 114 two HR 0 one score 0 two score 229 pool -1 place_diff 1 rank_diff
+1488 one new score
+115 one HR 113 two HR 1488 one score 0 two score 228 pool 2 place_diff 2 rank_diff
+1773 one new score
+115 one HR 112 two HR 1773 one score 0 two score 227 pool 1 place_diff 3 rank_diff
+1962 one new score
+
+114 one HR 115 two HR 0 one score 1962 two score 229 pool 1 place_diff -1 rank_diff
+801 one new score
+114 one HR 113 two HR 801 one score 0 two score 227 pool 3 place_diff 1 rank_diff
+1368 one new score
+114 one HR 112 two HR 1368 one score 0 two score 226 pool 2 place_diff 2 rank_diff
+1650 one new score
+
+113 one HR 115 two HR 0 one score 1962 two score 228 pool -2 place_diff -2 rank_diff
+855 one new score
+113 one HR 114 two HR 855 one score 1650 two score 227 pool -3 place_diff -1 rank_diff
+2557 one new score
+113 one HR 112 two HR 2557 one score 0 two score 225 pool -1 place_diff 1 rank_diff
+4019 one new score
+
+112 one HR 115 two HR 0 one score 1962 two score 227 pool -1 place_diff -3 rank_diff
+567 one new score
+112 one HR 114 two HR 567 one score 1650 two score 226 pool -2 place_diff -2 rank_diff
+1414 one new score
+112 one HR 113 two HR 1414 one score 6028 two score 225 pool 1 place_diff -1 rank_diff
+2201 one new score
+
+Car 0: HR: 2077 Placement: 3 Expected: 1 Score: 0
+
+Car 1: HR: 1764 Placement: 4 Expected: 2 Score: 0
+
+Car 2: HR: 6141 Placement: 1 Expected: 3 Score: 0
+
+Car 3: HR: 3413 Placement: 2 Expected: 4 Score: 0
+
+4 max place
+4 max place
+4 max place
+4 max place
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Enter placement for car 0: Enter placement for car 1: Enter placement for car 2: Enter placement for car 3: 
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Car 0: HR: 2077 Placement: 2 Expected: 3 Score: 0
+
+Car 1: HR: 1764 Placement: 4 Expected: 4 Score: 0
+
+Car 2: HR: 6141 Placement: 3 Expected: 1 Score: 0
+
+Car 3: HR: 3413 Placement: 1 Expected: 2 Score: 0
+
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+2077 one HR 1764 two HR 0 one score 0 two score 3841 pool -2 place_diff 313 rank_diff
+79 one new score
+2077 one HR 6141 two HR 79 one score 0 two score 8218 pool -1 place_diff -4064 rank_diff
+94 one new score
+2077 one HR 3413 two HR 94 one score 0 two score 5490 pool 1 place_diff -1336 rank_diff
+108 one new score
+
+1764 one HR 2077 two HR 0 one score 81 two score 3841 pool 2 place_diff -313 rank_diff
+42 one new score
+1764 one HR 6141 two HR 42 one score 0 two score 7905 pool 1 place_diff -4377 rank_diff
+48 one new score
+1764 one HR 3413 two HR 48 one score 0 two score 5177 pool 3 place_diff -1649 rank_diff
+58 one new score
+
+6141 one HR 2077 two HR 0 one score 81 two score 8218 pool 1 place_diff 4064 rank_diff
+5 one new score
+6141 one HR 1764 two HR 5 one score 58 two score 7905 pool -1 place_diff 4377 rank_diff
+16 one new score
+6141 one HR 3413 two HR 16 one score 0 two score 9554 pool 2 place_diff 2728 rank_diff
+24 one new score
+
+3413 one HR 2077 two HR 0 one score 81 two score 5490 pool -1 place_diff 1336 rank_diff
+26 one new score
+3413 one HR 1764 two HR 26 one score 58 two score 5177 pool -3 place_diff 1649 rank_diff
+46 one new score
+3413 one HR 6141 two HR 46 one score 24 two score 9554 pool -2 place_diff -2728 rank_diff
+72 one new score
+
+Car 0: HR: 2158 Placement: 2 Expected: 3 Score: 0
+
+Car 1: HR: 1822 Placement: 4 Expected: 4 Score: 0
+
+Car 2: HR: 6165 Placement: 3 Expected: 1 Score: 0
+
+Car 3: HR: 3467 Placement: 1 Expected: 2 Score: 0
+
+4 max place
+4 max place
+4 max place
+4 max place
+
+Option 1: Initialize match
+Option 2: Enter match data
+Option 3: Run match
+Option 4: Show status
+Option 5: Add car
+Option 6: Remove car
+Option 7: Quit
+Enter option: 
+Goodbye

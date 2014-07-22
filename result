@@ -1,10 +1,66 @@
-Car 0: HR: 100 Placement: 0 Expected: 2 Score: 0
-Car 1: HR: 100 Placement: 0 Expected: 2 Score: 0
-Car 2: HR: 100 Placement: 0 Expected: 2 Score: 0
-Car 3: HR: 200 Placement: 0 Expected: 1 Score: 0
+Placement for car 0: 1
+Placement for car 1: 2
+Placement for car 2: 3
+Placement for car 3: 4
+Car 0: HR: 100 Placement: 1 Expected: 1 Score: 0
+Car 1: HR: 100 Placement: 2 Expected: 1 Score: 0
+Car 2: HR: 100 Placement: 3 Expected: 1 Score: 0
+Car 3: HR: 100 Placement: 4 Expected: 1 Score: 0
 
-Car 0: HR: 100 Placement: 0 Expected: 2 Score: 0
-Car 1: HR: 100 Placement: 0 Expected: 2 Score: 0
-Car 2: HR: 200 Placement: 0 Expected: 1 Score: 0
-Car 3: HR: 200 Placement: 0 Expected: 1 Score: 0
+Running match...
+
+Adding score 15 to car 0
+Adding score 14 to car 1
+Adding score 13 to car 2
+Adding score 12 to car 3
+
+New HR
+Car 0: HR: 115 Placement: 1 Expected: 1 Score: 0
+Car 1: HR: 114 Placement: 2 Expected: 1 Score: 0
+Car 2: HR: 113 Placement: 3 Expected: 1 Score: 0
+Car 3: HR: 112 Placement: 4 Expected: 1 Score: 0
+
+Placement for car 0: 3
+Placement for car 1: 4
+Placement for car 2: 1
+Placement for car 3: 2
+Car 0: HR: 115 Placement: 3 Expected: 1 Score: 0
+Car 1: HR: 114 Placement: 4 Expected: 2 Score: 0
+Car 2: HR: 113 Placement: 1 Expected: 3 Score: 0
+Car 3: HR: 112 Placement: 2 Expected: 4 Score: 0
+
+Running match...
+
+Adding score 1962 to car 0
+Adding score 1650 to car 1
+Adding score 6028 to car 2
+Adding score 3301 to car 3
+
+New HR
+Car 0: HR: 2077 Placement: 3 Expected: 1 Score: 0
+Car 1: HR: 1764 Placement: 4 Expected: 2 Score: 0
+Car 2: HR: 6141 Placement: 1 Expected: 3 Score: 0
+Car 3: HR: 3413 Placement: 2 Expected: 4 Score: 0
+
+Placement for car 0: 2
+Placement for car 1: 4
+Placement for car 2: 3
+Placement for car 3: 1
+Car 0: HR: 2077 Placement: 2 Expected: 3 Score: 0
+Car 1: HR: 1764 Placement: 4 Expected: 4 Score: 0
+Car 2: HR: 6141 Placement: 3 Expected: 1 Score: 0
+Car 3: HR: 3413 Placement: 1 Expected: 2 Score: 0
+
+Running match...
+
+Adding score 81 to car 0
+Adding score 58 to car 1
+Adding score 24 to car 2
+Adding score 54 to car 3
+
+New HR
+Car 0: HR: 2158 Placement: 2 Expected: 3 Score: 0
+Car 1: HR: 1822 Placement: 4 Expected: 4 Score: 0
+Car 2: HR: 6165 Placement: 3 Expected: 1 Score: 0
+Car 3: HR: 3467 Placement: 1 Expected: 2 Score: 0
 

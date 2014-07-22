@@ -107,6 +107,7 @@ void compare(Car *one, Car *two) {
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
+  printf("%d one HR %d two HR %d one score %d two score %d pool %d place_diff %d rank_diff\n", one->HR, two->HR, one->score, two->score, pool, place_diff, rank_diff);
   if(rank_diff < 0) {
     rank_diff *= -1;
   }
@@ -114,30 +115,36 @@ void compare(Car *one, Car *two) {
   if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      one->score += .65 * pool / rank_diff * 10;
-      /*if(one.place  < one.expected) {
-        one.score = one.score * (one.expected - one.place);
-      }*/
+      one->score += (int)(.65 * pool / rank_diff * 10);
     }
     //Came behind lower car, upset
     else {
-      one->score += .25 * pool / rank_diff * 10;
+      one->score += (int)(.25 * pool / rank_diff * 10);
     }
   }
-  //Lower/equal ranked car
+  //Lower ranked car
   else if(one->HR < two->HR){
     //Came behind better car, expected
     if(place_diff > 0) {
-      one->score += .35 * pool / rank_diff * 10;
+      one->score += (int)(.35 * pool / rank_diff * 10);
     }
     //Came ahead of better car, upset
     else {
-      one->score += .75 * pool / rank_diff * 10;
+      one->score += (int)(.75 * pool / rank_diff * 10);
     }
   }
-  /*if(one->place < one->expected) {
-    one->score = one->score * (one->expected - one->place + 1);
-  }*/
+  //Equal HR
+  else {
+    //This car won
+    if(place_diff < 0) {
+      one->score += (int)(.55 * pool / one->HR / 2 * 10);
+    }
+    //This car lost
+    else {
+      one->score += (int)(.45 * pool / one->HR / 2 * 10);
+    }
+  }
+  printf("%d one new score\n", one->score);
 }
 
 void show_status(Car *match, int num_cars, FILE *result) {
@@ -156,7 +163,6 @@ void run_match(Car *match, int num_cars, FILE *result) {
   for(i = 0; i < num_cars; i++) {
     for(j = 0; j < num_cars; j++) {
       if(i != j){
-        //printf("Comparing cars %d and %d\n", i, j);
         compare(&match[i], &match[j]);
       }
     }
