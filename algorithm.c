@@ -136,11 +136,11 @@ void compare(Car *one, Car *two) {
   else {
     //This car won
     if(place_diff < 0) {
-      one->score += (int)(.80 * pool / (one->HR / 2) * 10);
+      one->score += (int)(.70 * pool / (one->HR / 2) * 10);
     }
     //This car lost
     else {
-      one->score += (int)(.20 * pool / (one->HR / 2) * 10);
+      one->score += (int)(.30 * pool / (one->HR / 2) * 10);
     }
   }
   printf("%d one new score\n", one->score);
