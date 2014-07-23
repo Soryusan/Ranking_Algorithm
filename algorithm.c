@@ -107,7 +107,6 @@ void compare(Car *one, Car *two) {
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
-  printf("%d one HR %d two HR %d one score %d two score %d pool %d place_diff %d rank_diff\n", one->HR, two->HR, one->score, two->score, pool, place_diff, rank_diff);
   if(rank_diff < 0) {
     rank_diff *= -1;
   }
@@ -137,11 +136,11 @@ void compare(Car *one, Car *two) {
   else {
     //This car won
     if(place_diff < 0) {
-      one->score += (int)(.55 * pool / one->HR / 2 * 10);
+      one->score += (int)(.80 * pool / (one->HR / 2) * 10);
     }
     //This car lost
     else {
-      one->score += (int)(.45 * pool / one->HR / 2 * 10);
+      one->score += (int)(.20 * pool / (one->HR / 2) * 10);
     }
   }
   printf("%d one new score\n", one->score);
@@ -150,10 +149,8 @@ void compare(Car *one, Car *two) {
 void show_status(Car *match, int num_cars, FILE *result) {
   int i;
   for(i = 0; i < num_cars; i++) {
-    fprintf(result, "Car %d: HR: %d Placement: %d Expected: %d Score: %d\n", 
-      i, match[i].HR, match[i].place, match[i].expected, match[i].score);
-      printf("Car %d: HR: %d Placement: %d Expected: %d Score: %d\n\n", 
-      i, match[i].HR, match[i].place, match[i].expected, match[i].score);
+    fprintf(result, "Car: %d HR: %d Score: %d Placement: %d Expected: %d\n", 
+      i, match[i].HR, match[i].score, match[i].place, match[i].expected);
   }
   fprintf(result, "\n");
 }
@@ -167,7 +164,7 @@ void run_match(Car *match, int num_cars, FILE *result) {
       }
     }
     if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * ((match[i].expected - match[i].place) * .75);
+      match[i].score = match[i].score * ((match[i].expected - match[i].place) + .25);
     }
     printf("\n");
     /*match[i].HR = match[i].score + match[i].HR;
@@ -196,7 +193,7 @@ void print_options() {
 int main(int argc, char* argv[]) {
   FILE *result = fopen("result", "w+");
   Car match[MAX_CARS] = {{0}, {0}, {0}, {0}};
-  int num_cars = 0, choice, i, j;
+  int num_cars = 0, choice, match_count = 0, i, j;
   do {
     print_options();
     printf("Enter option: ");
@@ -219,7 +216,8 @@ int main(int argc, char* argv[]) {
         }
         break;
       case RUN_MATCH:
-        fprintf(result, "Running match...\n\n");
+        match_count++;
+        fprintf(result, "Running match %d...\n\n", match_count);
         run_match(match, num_cars, result);
         expected_place(match, num_cars);
         break;
