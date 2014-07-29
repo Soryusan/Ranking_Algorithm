@@ -62,8 +62,6 @@ void expected_place(Car *match, int num_cars) {
   max_place = check_same_HR(match, num_cars);
   for(i = 0; i < num_cars; i++) {
     place = 1;
-    //max_place = check_same_HR(match, num_cars);
-    printf("%d max place\n", max_place);
     for(j = 0; j < num_cars; j++) {
       if(match[i].HR < match[j].HR) {
         if(!max_place || place < max_place) {
@@ -114,33 +112,33 @@ void compare(Car *one, Car *two) {
   if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      one->score += (int)(.65 * pool / rank_diff * 10);
+      one->score += (int)(.65 * pool / rank_diff);
     }
     //Came behind lower car, upset
     else {
-      one->score += (int)(.25 * pool / rank_diff * 10);
+      one->score += (int)(.25 * pool / rank_diff);
     }
   }
   //Lower ranked car
   else if(one->HR < two->HR){
     //Came behind better car, expected
     if(place_diff > 0) {
-      one->score += (int)(.35 * pool / rank_diff * 10);
+      one->score += (int)(.35 * pool / rank_diff);
     }
     //Came ahead of better car, upset
     else {
-      one->score += (int)(.75 * pool / rank_diff * 10);
+      one->score += (int)(.75 * pool / rank_diff);
     }
   }
   //Equal HR
   else {
     //This car won
     if(place_diff < 0) {
-      one->score += (int)(.70 * pool / (one->HR / 2) * 10);
+      one->score += (int)(.70 * pool);
     }
     //This car lost
     else {
-      one->score += (int)(.30 * pool / (one->HR / 2) * 10);
+      one->score += (int)(.30 * pool);
     }
   }
   printf("%d one new score\n", one->score);
@@ -164,11 +162,9 @@ void run_match(Car *match, int num_cars, FILE *result) {
       }
     }
     if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * ((match[i].expected - match[i].place) + .25);
+      match[i].score = match[i].score * ((match[i].expected - match[i].place) * 5);
     }
     printf("\n");
-    /*match[i].HR = match[i].score + match[i].HR;
-    match[i].score = 0;*/
   }
   for(i = 0; i < num_cars; i++) {
     fprintf(result, "Adding score %d to car %d\n", match[i].score, i);
