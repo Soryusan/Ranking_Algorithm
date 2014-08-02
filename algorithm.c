@@ -147,8 +147,8 @@ void compare(Car *one, Car *two) {
 void show_status(Car *match, int num_cars, FILE *result) {
   int i;
   for(i = 0; i < num_cars; i++) {
-    fprintf(result, "Car: %d HR: %d Score: %d Placement: %d Expected: %d\n", 
-      i, match[i].HR, match[i].score, match[i].place, match[i].expected);
+    fprintf(result, "Car: %d HR: %d Placement: %d Expected: %d\n", 
+      i, match[i].HR, match[i].place, match[i].expected);
   }
   fprintf(result, "\n");
 }
@@ -162,7 +162,7 @@ void run_match(Car *match, int num_cars, FILE *result) {
       }
     }
     if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * ((match[i].expected - match[i].place) * 5);
+      match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .2));
     }
     printf("\n");
   }
