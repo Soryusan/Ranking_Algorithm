@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define MAX_CARS 4
 #define INIT 1
 #define MATCH_DATA 2
@@ -101,7 +102,7 @@ void match_data(Car *match, int num_cars, FILE *result) {
 
 /*DEE ALGORITHM*/
 void compare(Car *one, Car *two) {
-  int rank_diff = one->HR - two->HR, place_diff = one->place - two->place, pool = (one->HR + two->HR);
+  int rank_diff = one->HR - two->HR, place_diff = one->place - two->place, pool = two->HR / one->place;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
@@ -112,22 +113,22 @@ void compare(Car *one, Car *two) {
   if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      one->score += (int)(.65 * pool / rank_diff);
+      one->score += (int)(.65 * pool);
     }
     //Came behind lower car, upset
     else {
-      one->score += (int)(.25 * pool / rank_diff);
+      one->score += (int)(.25 * pool);
     }
   }
   //Lower ranked car
   else if(one->HR < two->HR){
     //Came behind better car, expected
     if(place_diff > 0) {
-      one->score += (int)(.35 * pool / rank_diff);
+      one->score += (int)(.35 * pool);
     }
     //Came ahead of better car, upset
     else {
-      one->score += (int)(.75 * pool / rank_diff);
+      one->score += (int)(.75 * pool);
     }
   }
   //Equal HR
@@ -162,8 +163,9 @@ void run_match(Car *match, int num_cars, FILE *result) {
       }
     }
     if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .2));
+      match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .3));
     }
+    match[i].score = sqrt(match[i].score);
     printf("\n");
   }
   for(i = 0; i < num_cars; i++) {
