@@ -15,8 +15,8 @@
  */
 typedef struct {
   int init;
-  int HR;
-  int score;
+  double HR;
+  double score;
   int place;
   int expected;
   int place_diff;
@@ -37,7 +37,7 @@ void initialize_num_cars(int *num_cars) {
 /*Adds a car to the match*/
 void add_car(Car *match, int car) {
   printf("Enter initial rank for car %d: ", car);
-  scanf("%d", &match[car].HR);
+  scanf("%lf", &match[car].HR);
   match[car].init = 1;
 }
 /*Check for duplicate rankings*/
@@ -100,86 +100,116 @@ void match_data(Car *match, int num_cars, FILE *result) {
   free(placement);
 }
 
-/*DEE ALGORITHM*/
+/*Car comparisons*/
 void compare(Car *one, Car *two) {
-  int rank_diff = one->HR - two->HR, place_diff = one->place - two->place, pool = two->HR / one->place;
+  int place_diff = one->place - two->place;
+  double rank_diff = one->HR - two->HR, pool = two->HR;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
-  if(rank_diff < 0) {
-    rank_diff *= -1;
+
+
+  if(place_diff < 0) {
+    one->score += .75 * pool;
+  }
+  else {
+    one->score += .25 * pool;
   }
   //Higher ranked car
-  if(one->HR > two->HR) {
+  /*if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      one->score += (int)(.65 * pool);
+      one->score += .65 * pool;
     }
     //Came behind lower car, upset
     else {
-      one->score += (int)(.25 * pool);
+      one->score += .25 * pool;
     }
   }
-  //Lower ranked car
-  else if(one->HR < two->HR){
+  //Lower or equal ranked car
+  else if(one->HR <= two->HR){
     //Came behind better car, expected
     if(place_diff > 0) {
-      one->score += (int)(.35 * pool);
+      one->score += .35 * pool;
     }
     //Came ahead of better car, upset
     else {
-      one->score += (int)(.75 * pool);
+      one->score += .75 * pool;
     }
-  }
+  }*/
   //Equal HR
-  else {
+  /*else {
     //This car won
     if(place_diff < 0) {
-      one->score += (int)(.70 * pool);
+      one->score += .70 * pool;
     }
     //This car lost
     else {
-      one->score += (int)(.30 * pool);
+      one->score += .30 * pool;
     }
-  }
-  printf("%d one new score\n", one->score);
+  }*/
+  printf("%.2f new score\n", one->score);
 }
 
+/*DEE ALGORITHM*/
+void run_algorithm(Car *match, int num_cars, FILE *result) {
+  int i, j;
+  double average, deviation;
+  //Calculate average
+  for(i = 0; i < num_cars; i++) {
+    average += match[i].HR;
+  }
+  average /= num_cars;
+
+  for(i = 0; i < num_cars; i++) {
+    for(j = 0; j < num_cars; j++) {
+      if(i != j) {
+        compare(&match[i], &match[j]);
+      }
+    }
+    //match[i].score = sqrt(match[i].score);
+    printf("\n");
+  }
+
+  //fprintf(result, "Average: %.2f\n", average);
+  for(i = 0; i < num_cars; i++) {
+    if(match[i].expected > match[i].place) {
+      match[i].score = match[i].score * (((match[i].expected - match[i].place) * 1.5));
+    }
+    deviation = match[i].HR - average;
+    if(!deviation) {
+      deviation = 1;
+    }
+    //Below average, placed above expected
+    if(deviation < 0) {
+      
+    }
+    fprintf(result, "Deviation: %lf\nAdding score %.2f to car %d\n", deviation, sqrt(match[i].score) / deviation, i);
+    match[i].HR = (sqrt(match[i].score) / deviation) + match[i].HR;
+    match[i].score = 0;
+  }
+  fprintf(result, "\nNew HR\n");
+}
+
+/*display current status of all cars*/
 void show_status(Car *match, int num_cars, FILE *result) {
   int i;
   for(i = 0; i < num_cars; i++) {
-    fprintf(result, "Car: %d HR: %d Placement: %d Expected: %d\n", 
+    fprintf(result, "Car: %d HR: %.2f Placement: %d Expected: %d\n", 
       i, match[i].HR, match[i].place, match[i].expected);
   }
   fprintf(result, "\n");
 }
 
+/*simulate match, run results through algorithm*/
 void run_match(Car *match, int num_cars, FILE *result) {
-  int i,j;
-  for(i = 0; i < num_cars; i++) {
-    for(j = 0; j < num_cars; j++) {
-      if(i != j){
-        compare(&match[i], &match[j]);
-      }
-    }
-    if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .3));
-    }
-    match[i].score = sqrt(match[i].score);
-    printf("\n");
-  }
-  for(i = 0; i < num_cars; i++) {
-    fprintf(result, "Adding score %d to car %d\n", match[i].score, i);
-    match[i].HR = match[i].score + match[i].HR;
-    match[i].score = 0;
-  }
-  fprintf(result, "\nNew HR\n");
+  run_algorithm(match, num_cars, result);
   show_status(match, num_cars, result);
 }
 
 void print_options() {
   printf("\n");
-  printf("Option 1: Initialize match\n");
+  printf("Option 1: Initialize cars\n");
   printf("Option 2: Enter match data\n");
   printf("Option 3: Run match\n");
   printf("Option 4: Show status\n");
@@ -210,12 +240,12 @@ int main(int argc, char* argv[]) {
           match_data(match, num_cars, result);
         }
         else {
-          printf("Initialize data\n");
+          printf("Initialize cars\n");
         }
         break;
       case RUN_MATCH:
-        match_count++;
-        fprintf(result, "Running match %d...\n\n", match_count);
+        //match_count++;
+        fprintf(result, "Running match %d...\n\n", ++match_count);
         run_match(match, num_cars, result);
         expected_place(match, num_cars);
         break;
