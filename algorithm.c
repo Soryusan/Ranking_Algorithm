@@ -103,40 +103,42 @@ void match_data(Car *match, int num_cars, FILE *result) {
 /*Car comparisons*/
 void compare(Car *one, Car *two) {
   int place_diff = one->place - two->place;
-  double rank_diff = one->HR - two->HR, pool = two->HR;
+  double rank_diff = abs(one->HR - two->HR), pool = one->HR + two->HR;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
+  if(!rank_diff) {
+    rank_diff = 1;
+  }
 
-
-  if(place_diff < 0) {
-    one->score += .75 * pool;
+  /*if(place_diff < 0) {
+    one->score += .70 * pool / rank_diff;
   }
   else {
-    one->score += .25 * pool;
-  }
+    one->score += .30 * pool / rank_diff;
+  }*/
   //Higher ranked car
-  /*if(one->HR > two->HR) {
+  if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      one->score += .65 * pool;
+      one->score += .65 * pool / rank_diff;
     }
     //Came behind lower car, upset
     else {
-      one->score += .25 * pool;
+      one->score += .25 * pool / rank_diff;
     }
   }
   //Lower or equal ranked car
   else if(one->HR <= two->HR){
     //Came behind better car, expected
     if(place_diff > 0) {
-      one->score += .35 * pool;
+      one->score += .35 * pool / rank_diff;
     }
     //Came ahead of better car, upset
     else {
-      one->score += .75 * pool;
+      one->score += .75 * pool / rank_diff;
     }
-  }*/
+  }
   //Equal HR
   /*else {
     //This car won
@@ -160,8 +162,12 @@ void run_algorithm(Car *match, int num_cars, FILE *result) {
     average += match[i].HR;
   }
   average /= num_cars;
-
+  fprintf(result, "Average: %.2f\n", average);
   for(i = 0; i < num_cars; i++) {
+    deviation = match[i].HR - average;
+    if(!deviation) {
+      deviation = 1;
+    }
     for(j = 0; j < num_cars; j++) {
       if(i != j) {
         compare(&match[i], &match[j]);
@@ -174,18 +180,24 @@ void run_algorithm(Car *match, int num_cars, FILE *result) {
   //fprintf(result, "Average: %.2f\n", average);
   for(i = 0; i < num_cars; i++) {
     if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * (((match[i].expected - match[i].place) * 1.5));
+      match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .5));
     }
-    deviation = match[i].HR - average;
-    if(!deviation) {
-      deviation = 1;
+
+    /*if(deviation < 0) {
+      if(match[i].expected > match[i].place) {
+        match[i].score = match[i].score * (.5 + (match[i].expected - match[i].place) * .5);
+      }
     }
-    //Below average, placed above expected
-    if(deviation < 0) {
-      
+    else {
+      if(match[i].expected < match[i].place) {
+        match[i].score = match[i].score / (.5 + (match[i].place - match[i].expected) * .5);
+      }
+    }*/
+    if(match[i].score) {
+      match[i].score /= sqrt(match[i].score);
     }
-    fprintf(result, "Deviation: %lf\nAdding score %.2f to car %d\n", deviation, sqrt(match[i].score) / deviation, i);
-    match[i].HR = (sqrt(match[i].score) / deviation) + match[i].HR;
+    fprintf(result, "Adding score %.2f to car %d\n", match[i].score, i);
+    match[i].HR = match[i].score + match[i].HR;
     match[i].score = 0;
   }
   fprintf(result, "\nNew HR\n");
