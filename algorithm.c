@@ -6,9 +6,10 @@
 #define MATCH_DATA 2
 #define RUN_MATCH 3
 #define SHOW_STATUS 4
-#define ADD_CAR 5
-#define REMOVE_CAR 6
-#define QUIT 7
+#define RUN_RANDOM 5
+#define ADD_CAR 6
+#define REMOVE_CAR 7
+#define QUIT 8
 /* Struct for car data, contains whether car has been intialized,
  * it's hidden rank, score gain, placement in match, and expected
  * placement
@@ -19,7 +20,6 @@ typedef struct {
   double score;
   int place;
   int expected;
-  int place_diff;
   int checked;
 } Car;
 
@@ -86,7 +86,6 @@ void match_data(Car *match, int num_cars, FILE *result) {
         printf("This placement has already been used\n");
       }
       else {
-        match[i].place_diff = match[i].expected - match[i].place;
         placement[match[i].place - 1] = 1;
         fprintf(result,"Placement for car %d: %d\n", i, match[i].place);
       }
@@ -101,44 +100,47 @@ void match_data(Car *match, int num_cars, FILE *result) {
 }
 
 /*Car comparisons*/
-void compare(Car *one, Car *two) {
+void compare(Car *one, Car *two, int total, FILE *result) {
   int place_diff = one->place - two->place;
-  double rank_diff = abs(one->HR - two->HR), pool = one->HR + two->HR;
+  double rank_diff = abs(one->HR - two->HR), pool = two->HR, percentage;
   //check ranks of cars
   //check which car placed ahead of the other
   //check to see if car expected to place ahead of other
   if(!rank_diff) {
     rank_diff = 1;
   }
-
-  /*if(place_diff < 0) {
-    one->score += .70 * pool / rank_diff;
+  percentage = one->HR / total;
+  percentage = 1 - percentage;
+  pool *= percentage;
+  //fprintf(result, "Percentage: %.2f Pool: %.2f\n", percentage, pool);
+  if(place_diff < 0) {
+    one->score += .70 * pool;
   }
   else {
-    one->score += .30 * pool / rank_diff;
-  }*/
+    one->score += .30 * pool;
+  }
   //Higher ranked car
-  if(one->HR > two->HR) {
+  /*if(one->HR > two->HR) {
     //Came in better placement, expected
     if(place_diff < 0) {
-      one->score += .65 * pool / rank_diff;
+      one->score += .65 * pool;
     }
     //Came behind lower car, upset
     else {
-      one->score += .25 * pool / rank_diff;
+      one->score += .25 * pool;
     }
   }
   //Lower or equal ranked car
   else if(one->HR <= two->HR){
     //Came behind better car, expected
     if(place_diff > 0) {
-      one->score += .35 * pool / rank_diff;
+      one->score += .35 * pool;
     }
     //Came ahead of better car, upset
     else {
-      one->score += .75 * pool / rank_diff;
+      one->score += .75 * pool;
     }
-  }
+  }*/
   //Equal HR
   /*else {
     //This car won
@@ -155,22 +157,25 @@ void compare(Car *one, Car *two) {
 
 /*DEE ALGORITHM*/
 void run_algorithm(Car *match, int num_cars, FILE *result) {
-  int i, j;
+  int i, j, total = 0;
   double average, deviation;
   //Calculate average
-  for(i = 0; i < num_cars; i++) {
+  /*for(i = 0; i < num_cars; i++) {
     average += match[i].HR;
   }
-  average /= num_cars;
-  fprintf(result, "Average: %.2f\n", average);
+  average /= num_cars;*/
   for(i = 0; i < num_cars; i++) {
-    deviation = match[i].HR - average;
+    total += match[i].HR;
+  }
+  //fprintf(result, "Average: %.2f\n", average);
+  for(i = 0; i < num_cars; i++) {
+    /*deviation = match[i].HR - average;
     if(!deviation) {
       deviation = 1;
-    }
+    }*/
     for(j = 0; j < num_cars; j++) {
       if(i != j) {
-        compare(&match[i], &match[j]);
+        compare(&match[i], &match[j], total, result);
       }
     }
     //match[i].score = sqrt(match[i].score);
@@ -193,9 +198,8 @@ void run_algorithm(Car *match, int num_cars, FILE *result) {
         match[i].score = match[i].score / (.5 + (match[i].place - match[i].expected) * .5);
       }
     }*/
-    if(match[i].score) {
-      match[i].score /= sqrt(match[i].score);
-    }
+    match[i].score /= sqrt(match[i].score);
+
     fprintf(result, "Adding score %.2f to car %d\n", match[i].score, i);
     match[i].HR = match[i].score + match[i].HR;
     match[i].score = 0;
@@ -219,21 +223,42 @@ void run_match(Car *match, int num_cars, FILE *result) {
   show_status(match, num_cars, result);
 }
 
+void random_match(Car *match, int num_cars, FILE *result, int *match_count) {
+  int i, random, *place;
+  place = calloc(sizeof(int), num_cars);
+  for(i = 0; i < num_cars; i++) {
+    random = rand() % num_cars + 1;
+    if(place[random - 1]) {
+      i--;
+    }
+    else {
+      place[random - 1] = 1;
+      match[i].place = random;
+    }
+  }
+  free(place);
+  expected_place(match, num_cars);
+  show_status(match, num_cars, result);
+  fprintf(result, "Running match %d...\n\n", ++(*match_count));
+  run_match(match, num_cars, result);
+}
+
 void print_options() {
   printf("\n");
   printf("Option 1: Initialize cars\n");
   printf("Option 2: Enter match data\n");
   printf("Option 3: Run match\n");
   printf("Option 4: Show status\n");
-  printf("Option 5: Add car\n");
-  printf("Option 6: Remove car\n");
-  printf("Option 7: Quit\n");
+  printf("Option 5: Random match\n");
+  printf("Option 6: Add car\n");
+  printf("Option 7: Remove car\n");
+  printf("Option 8: Quit\n");
 }
 
 int main(int argc, char* argv[]) {
   FILE *result = fopen("result", "w+");
   Car match[MAX_CARS] = {{0}, {0}, {0}, {0}};
-  int num_cars = 0, choice, match_count = 0, i, j;
+  int num_cars = 0, choice, match_count = 0, rounds, i, j;
   do {
     print_options();
     printf("Enter option: ");
@@ -263,6 +288,15 @@ int main(int argc, char* argv[]) {
         break;
       case SHOW_STATUS:
         show_status(match, num_cars, result);
+        break;
+      case RUN_RANDOM:
+        printf("Enter number of rounds: ");
+        scanf("%d", &rounds);
+        for(i = 0; i < rounds; i++) {
+          //fprintf(result, "Running match %d...\n\n", ++match_count);
+          random_match(match, num_cars, result, &match_count);
+          expected_place(match, num_cars);
+        }
         break;
       case ADD_CAR:
         if(num_cars && num_cars < MAX_CARS) {
