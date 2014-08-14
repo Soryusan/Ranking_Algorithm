@@ -1,1100 +1,900 @@
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 100.00 Placement: 1 Expected: 1
-Car: 1 HR: 100.00 Placement: 2 Expected: 1
-Car: 2 HR: 100.00 Placement: 3 Expected: 1
-Car: 3 HR: 100.00 Placement: 4 Expected: 1
+Car: 0 HR: 500.00 Placement: 4 Expected: 2
+Car: 1 HR: 510.00 Placement: 2 Expected: 1
+Car: 2 HR: 480.00 Placement: 3 Expected: 3
+Car: 3 HR: 450.00 Placement: 1 Expected: 4
 
 Running match 1...
 
-Adding score 12.55 to car 0
-Adding score 11.29 to car 1
-Adding score 9.87 to car 2
-Adding score 8.22 to car 3
+Adding score 7.28 to car 0
+Adding score 13.74 to car 1
+Adding score 10.90 to car 2
+Adding score 45.47 to car 3
 
 New HR
-Car: 0 HR: 112.55 Placement: 1 Expected: 1
-Car: 1 HR: 111.29 Placement: 2 Expected: 1
-Car: 2 HR: 109.87 Placement: 3 Expected: 1
-Car: 3 HR: 108.22 Placement: 4 Expected: 1
+Car: 0 HR: 507.28 Placement: 4 Expected: 2
+Car: 1 HR: 523.74 Placement: 2 Expected: 1
+Car: 2 HR: 490.90 Placement: 3 Expected: 3
+Car: 3 HR: 495.47 Placement: 1 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 112.55 Placement: 1 Expected: 1
-Car: 1 HR: 111.29 Placement: 2 Expected: 2
-Car: 2 HR: 109.87 Placement: 3 Expected: 3
-Car: 3 HR: 108.22 Placement: 4 Expected: 4
+Car: 0 HR: 507.28 Placement: 1 Expected: 2
+Car: 1 HR: 523.74 Placement: 3 Expected: 1
+Car: 2 HR: 490.90 Placement: 4 Expected: 4
+Car: 3 HR: 495.47 Placement: 2 Expected: 3
 
 Running match 2...
 
-Adding score 13.10 to car 0
-Adding score 11.80 to car 1
-Adding score 10.35 to car 2
-Adding score 8.69 to car 3
+Adding score 26.43 to car 0
+Adding score 10.63 to car 1
+Adding score 7.72 to car 2
+Adding score 21.73 to car 3
 
 New HR
-Car: 0 HR: 125.65 Placement: 1 Expected: 1
-Car: 1 HR: 123.09 Placement: 2 Expected: 2
-Car: 2 HR: 120.23 Placement: 3 Expected: 3
-Car: 3 HR: 116.90 Placement: 4 Expected: 4
+Car: 0 HR: 533.71 Placement: 1 Expected: 2
+Car: 1 HR: 534.36 Placement: 3 Expected: 1
+Car: 2 HR: 498.62 Placement: 4 Expected: 4
+Car: 3 HR: 517.20 Placement: 2 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 125.65 Placement: 1 Expected: 1
-Car: 1 HR: 123.09 Placement: 2 Expected: 2
-Car: 2 HR: 120.23 Placement: 3 Expected: 3
-Car: 3 HR: 116.90 Placement: 4 Expected: 4
+Car: 0 HR: 533.71 Placement: 1 Expected: 2
+Car: 1 HR: 534.36 Placement: 2 Expected: 1
+Car: 2 HR: 498.62 Placement: 3 Expected: 4
+Car: 3 HR: 517.20 Placement: 4 Expected: 3
 
 Running match 3...
 
-Adding score 13.66 to car 0
-Adding score 12.32 to car 1
-Adding score 10.84 to car 2
-Adding score 9.16 to car 3
+Adding score 26.53 to car 0
+Adding score 14.19 to car 1
+Adding score 17.06 to car 2
+Adding score 7.74 to car 3
 
 New HR
-Car: 0 HR: 139.31 Placement: 1 Expected: 1
-Car: 1 HR: 135.42 Placement: 2 Expected: 2
-Car: 2 HR: 131.07 Placement: 3 Expected: 3
-Car: 3 HR: 126.07 Placement: 4 Expected: 4
+Car: 0 HR: 560.24 Placement: 1 Expected: 2
+Car: 1 HR: 548.56 Placement: 2 Expected: 1
+Car: 2 HR: 515.68 Placement: 3 Expected: 4
+Car: 3 HR: 524.94 Placement: 4 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 139.31 Placement: 1 Expected: 1
-Car: 1 HR: 135.42 Placement: 2 Expected: 2
-Car: 2 HR: 131.07 Placement: 3 Expected: 3
-Car: 3 HR: 126.07 Placement: 4 Expected: 4
+Car: 0 HR: 560.24 Placement: 4 Expected: 1
+Car: 1 HR: 548.56 Placement: 2 Expected: 2
+Car: 2 HR: 515.68 Placement: 1 Expected: 4
+Car: 3 HR: 524.94 Placement: 3 Expected: 3
 
 Running match 4...
 
-Adding score 14.24 to car 0
-Adding score 12.85 to car 1
-Adding score 11.34 to car 2
-Adding score 9.64 to car 3
+Adding score 7.60 to car 0
+Adding score 14.69 to car 1
+Adding score 46.88 to car 2
+Adding score 11.60 to car 3
 
 New HR
-Car: 0 HR: 153.55 Placement: 1 Expected: 1
-Car: 1 HR: 148.27 Placement: 2 Expected: 2
-Car: 2 HR: 142.41 Placement: 3 Expected: 3
-Car: 3 HR: 135.70 Placement: 4 Expected: 4
+Car: 0 HR: 567.84 Placement: 4 Expected: 1
+Car: 1 HR: 563.25 Placement: 2 Expected: 2
+Car: 2 HR: 562.56 Placement: 1 Expected: 4
+Car: 3 HR: 536.54 Placement: 3 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 153.55 Placement: 1 Expected: 1
-Car: 1 HR: 148.27 Placement: 2 Expected: 2
-Car: 2 HR: 142.41 Placement: 3 Expected: 3
-Car: 3 HR: 135.70 Placement: 4 Expected: 4
+Car: 0 HR: 567.84 Placement: 1 Expected: 1
+Car: 1 HR: 563.25 Placement: 4 Expected: 2
+Car: 2 HR: 562.56 Placement: 2 Expected: 3
+Car: 3 HR: 536.54 Placement: 3 Expected: 4
 
 Running match 5...
 
-Adding score 14.80 to car 0
-Adding score 13.38 to car 1
-Adding score 11.82 to car 2
-Adding score 10.10 to car 3
+Adding score 18.37 to car 0
+Adding score 7.92 to car 1
+Adding score 22.33 to car 2
+Adding score 17.69 to car 3
 
 New HR
-Car: 0 HR: 168.35 Placement: 1 Expected: 1
-Car: 1 HR: 161.65 Placement: 2 Expected: 2
-Car: 2 HR: 154.24 Placement: 3 Expected: 3
-Car: 3 HR: 145.80 Placement: 4 Expected: 4
+Car: 0 HR: 586.21 Placement: 1 Expected: 1
+Car: 1 HR: 571.16 Placement: 4 Expected: 2
+Car: 2 HR: 584.90 Placement: 2 Expected: 3
+Car: 3 HR: 554.24 Placement: 3 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 168.35 Placement: 1 Expected: 1
-Car: 1 HR: 161.65 Placement: 2 Expected: 2
-Car: 2 HR: 154.24 Placement: 3 Expected: 3
-Car: 3 HR: 145.80 Placement: 4 Expected: 4
+Car: 0 HR: 586.21 Placement: 1 Expected: 1
+Car: 1 HR: 571.16 Placement: 4 Expected: 3
+Car: 2 HR: 584.90 Placement: 3 Expected: 2
+Car: 3 HR: 554.24 Placement: 2 Expected: 4
 
 Running match 6...
 
-Adding score 15.38 to car 0
-Adding score 13.91 to car 1
-Adding score 12.32 to car 2
-Adding score 10.56 to car 3
+Adding score 18.61 to car 0
+Adding score 8.12 to car 1
+Adding score 11.54 to car 2
+Adding score 31.19 to car 3
 
 New HR
-Car: 0 HR: 183.73 Placement: 1 Expected: 1
-Car: 1 HR: 175.56 Placement: 2 Expected: 2
-Car: 2 HR: 166.55 Placement: 3 Expected: 3
-Car: 3 HR: 156.36 Placement: 4 Expected: 4
+Car: 0 HR: 604.82 Placement: 1 Expected: 1
+Car: 1 HR: 579.28 Placement: 4 Expected: 3
+Car: 2 HR: 596.44 Placement: 3 Expected: 2
+Car: 3 HR: 585.43 Placement: 2 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 183.73 Placement: 1 Expected: 1
-Car: 1 HR: 175.56 Placement: 2 Expected: 2
-Car: 2 HR: 166.55 Placement: 3 Expected: 3
-Car: 3 HR: 156.36 Placement: 4 Expected: 4
+Car: 0 HR: 604.82 Placement: 4 Expected: 1
+Car: 1 HR: 579.28 Placement: 2 Expected: 4
+Car: 2 HR: 596.44 Placement: 1 Expected: 2
+Car: 3 HR: 585.43 Placement: 3 Expected: 3
 
 Running match 7...
 
-Adding score 15.96 to car 0
-Adding score 14.44 to car 1
-Adding score 12.81 to car 2
-Adding score 11.02 to car 3
+Adding score 8.09 to car 0
+Adding score 31.43 to car 1
+Adding score 28.57 to car 2
+Adding score 12.01 to car 3
 
 New HR
-Car: 0 HR: 199.69 Placement: 1 Expected: 1
-Car: 1 HR: 190.00 Placement: 2 Expected: 2
-Car: 2 HR: 179.36 Placement: 3 Expected: 3
-Car: 3 HR: 167.38 Placement: 4 Expected: 4
+Car: 0 HR: 612.91 Placement: 4 Expected: 1
+Car: 1 HR: 610.71 Placement: 2 Expected: 4
+Car: 2 HR: 625.01 Placement: 1 Expected: 2
+Car: 3 HR: 597.44 Placement: 3 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 199.69 Placement: 1 Expected: 1
-Car: 1 HR: 190.00 Placement: 2 Expected: 2
-Car: 2 HR: 179.36 Placement: 3 Expected: 3
-Car: 3 HR: 167.38 Placement: 4 Expected: 4
+Car: 0 HR: 612.91 Placement: 2 Expected: 2
+Car: 1 HR: 610.71 Placement: 1 Expected: 3
+Car: 2 HR: 625.01 Placement: 3 Expected: 1
+Car: 3 HR: 597.44 Placement: 4 Expected: 4
 
 Running match 8...
 
-Adding score 16.54 to car 0
-Adding score 14.98 to car 1
-Adding score 13.30 to car 2
-Adding score 11.48 to car 3
+Adding score 15.75 to car 0
+Adding score 38.99 to car 1
+Adding score 11.82 to car 2
+Adding score 8.48 to car 3
 
 New HR
-Car: 0 HR: 216.23 Placement: 1 Expected: 1
-Car: 1 HR: 204.98 Placement: 2 Expected: 2
-Car: 2 HR: 192.66 Placement: 3 Expected: 3
-Car: 3 HR: 178.87 Placement: 4 Expected: 4
+Car: 0 HR: 628.65 Placement: 2 Expected: 2
+Car: 1 HR: 649.70 Placement: 1 Expected: 3
+Car: 2 HR: 636.83 Placement: 3 Expected: 1
+Car: 3 HR: 605.92 Placement: 4 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 216.23 Placement: 1 Expected: 1
-Car: 1 HR: 204.98 Placement: 2 Expected: 2
-Car: 2 HR: 192.66 Placement: 3 Expected: 3
-Car: 3 HR: 178.87 Placement: 4 Expected: 4
+Car: 0 HR: 628.65 Placement: 3 Expected: 3
+Car: 1 HR: 649.70 Placement: 2 Expected: 1
+Car: 2 HR: 636.83 Placement: 1 Expected: 2
+Car: 3 HR: 605.92 Placement: 4 Expected: 4
 
 Running match 9...
 
-Adding score 17.12 to car 0
-Adding score 15.51 to car 1
-Adding score 13.79 to car 2
-Adding score 11.94 to car 3
+Adding score 12.11 to car 0
+Adding score 15.60 to car 1
+Adding score 29.46 to car 2
+Adding score 8.69 to car 3
 
 New HR
-Car: 0 HR: 233.35 Placement: 1 Expected: 1
-Car: 1 HR: 220.49 Placement: 2 Expected: 2
-Car: 2 HR: 206.45 Placement: 3 Expected: 3
-Car: 3 HR: 190.80 Placement: 4 Expected: 4
+Car: 0 HR: 640.76 Placement: 3 Expected: 3
+Car: 1 HR: 665.30 Placement: 2 Expected: 1
+Car: 2 HR: 666.29 Placement: 1 Expected: 2
+Car: 3 HR: 614.61 Placement: 4 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 233.35 Placement: 1 Expected: 1
-Car: 1 HR: 220.49 Placement: 2 Expected: 2
-Car: 2 HR: 206.45 Placement: 3 Expected: 3
-Car: 3 HR: 190.80 Placement: 4 Expected: 4
+Car: 0 HR: 640.76 Placement: 2 Expected: 3
+Car: 1 HR: 665.30 Placement: 3 Expected: 2
+Car: 2 HR: 666.29 Placement: 4 Expected: 1
+Car: 3 HR: 614.61 Placement: 1 Expected: 4
 
 Running match 10...
 
-Adding score 17.71 to car 0
-Adding score 16.05 to car 1
-Adding score 14.29 to car 2
-Adding score 12.39 to car 3
+Adding score 24.77 to car 0
+Adding score 12.31 to car 1
+Adding score 8.41 to car 2
+Adding score 51.75 to car 3
 
 New HR
-Car: 0 HR: 251.06 Placement: 1 Expected: 1
-Car: 1 HR: 236.55 Placement: 2 Expected: 2
-Car: 2 HR: 220.74 Placement: 3 Expected: 3
-Car: 3 HR: 203.19 Placement: 4 Expected: 4
+Car: 0 HR: 665.54 Placement: 2 Expected: 3
+Car: 1 HR: 677.62 Placement: 3 Expected: 2
+Car: 2 HR: 674.70 Placement: 4 Expected: 1
+Car: 3 HR: 666.36 Placement: 1 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 251.06 Placement: 1 Expected: 1
-Car: 1 HR: 236.55 Placement: 2 Expected: 2
-Car: 2 HR: 220.74 Placement: 3 Expected: 3
-Car: 3 HR: 203.19 Placement: 4 Expected: 4
+Car: 0 HR: 665.54 Placement: 2 Expected: 4
+Car: 1 HR: 677.62 Placement: 4 Expected: 1
+Car: 2 HR: 674.70 Placement: 3 Expected: 2
+Car: 3 HR: 666.36 Placement: 1 Expected: 3
 
 Running match 11...
 
-Adding score 18.30 to car 0
-Adding score 16.59 to car 1
-Adding score 14.78 to car 2
-Adding score 12.85 to car 3
+Adding score 33.29 to car 0
+Adding score 8.69 to car 1
+Adding score 12.63 to car 2
+Adding score 41.00 to car 3
 
 New HR
-Car: 0 HR: 269.36 Placement: 1 Expected: 1
-Car: 1 HR: 253.14 Placement: 2 Expected: 2
-Car: 2 HR: 235.52 Placement: 3 Expected: 3
-Car: 3 HR: 216.04 Placement: 4 Expected: 4
+Car: 0 HR: 698.83 Placement: 2 Expected: 4
+Car: 1 HR: 686.30 Placement: 4 Expected: 1
+Car: 2 HR: 687.33 Placement: 3 Expected: 2
+Car: 3 HR: 707.35 Placement: 1 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 269.36 Placement: 1 Expected: 1
-Car: 1 HR: 253.14 Placement: 2 Expected: 2
-Car: 2 HR: 235.52 Placement: 3 Expected: 3
-Car: 3 HR: 216.04 Placement: 4 Expected: 4
+Car: 0 HR: 698.83 Placement: 4 Expected: 2
+Car: 1 HR: 686.30 Placement: 3 Expected: 4
+Car: 2 HR: 687.33 Placement: 1 Expected: 3
+Car: 3 HR: 707.35 Placement: 2 Expected: 1
 
 Running match 12...
 
-Adding score 18.89 to car 0
-Adding score 17.14 to car 1
-Adding score 15.28 to car 2
-Adding score 13.30 to car 3
+Adding score 8.87 to car 0
+Adding score 19.45 to car 1
+Adding score 41.83 to car 2
+Adding score 16.63 to car 3
 
 New HR
-Car: 0 HR: 288.25 Placement: 1 Expected: 1
-Car: 1 HR: 270.28 Placement: 2 Expected: 2
-Car: 2 HR: 250.80 Placement: 3 Expected: 3
-Car: 3 HR: 229.34 Placement: 4 Expected: 4
+Car: 0 HR: 707.69 Placement: 4 Expected: 2
+Car: 1 HR: 705.75 Placement: 3 Expected: 4
+Car: 2 HR: 729.16 Placement: 1 Expected: 3
+Car: 3 HR: 723.98 Placement: 2 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 288.25 Placement: 1 Expected: 1
-Car: 1 HR: 270.28 Placement: 2 Expected: 2
-Car: 2 HR: 250.80 Placement: 3 Expected: 3
-Car: 3 HR: 229.34 Placement: 4 Expected: 4
+Car: 0 HR: 707.69 Placement: 3 Expected: 3
+Car: 1 HR: 705.75 Placement: 1 Expected: 4
+Car: 2 HR: 729.16 Placement: 2 Expected: 1
+Car: 3 HR: 723.98 Placement: 4 Expected: 2
 
 Running match 13...
 
-Adding score 19.48 to car 0
-Adding score 17.68 to car 1
-Adding score 15.77 to car 2
-Adding score 13.75 to car 3
+Adding score 13.19 to car 0
+Adding score 53.25 to car 1
+Adding score 16.91 to car 2
+Adding score 8.97 to car 3
 
 New HR
-Car: 0 HR: 307.72 Placement: 1 Expected: 1
-Car: 1 HR: 287.95 Placement: 2 Expected: 2
-Car: 2 HR: 266.57 Placement: 3 Expected: 3
-Car: 3 HR: 243.09 Placement: 4 Expected: 4
+Car: 0 HR: 720.88 Placement: 3 Expected: 3
+Car: 1 HR: 759.00 Placement: 1 Expected: 4
+Car: 2 HR: 746.07 Placement: 2 Expected: 1
+Car: 3 HR: 732.96 Placement: 4 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 307.72 Placement: 1 Expected: 1
-Car: 1 HR: 287.95 Placement: 2 Expected: 2
-Car: 2 HR: 266.57 Placement: 3 Expected: 3
-Car: 3 HR: 243.09 Placement: 4 Expected: 4
+Car: 0 HR: 720.88 Placement: 1 Expected: 4
+Car: 1 HR: 759.00 Placement: 2 Expected: 1
+Car: 2 HR: 746.07 Placement: 3 Expected: 2
+Car: 3 HR: 732.96 Placement: 4 Expected: 3
 
 Running match 14...
 
-Adding score 20.06 to car 0
-Adding score 18.22 to car 1
-Adding score 16.27 to car 2
-Adding score 14.20 to car 3
+Adding score 54.47 to car 0
+Adding score 17.11 to car 1
+Adding score 13.16 to car 2
+Adding score 9.24 to car 3
 
 New HR
-Car: 0 HR: 327.79 Placement: 1 Expected: 1
-Car: 1 HR: 306.17 Placement: 2 Expected: 2
-Car: 2 HR: 282.84 Placement: 3 Expected: 3
-Car: 3 HR: 257.30 Placement: 4 Expected: 4
+Car: 0 HR: 775.35 Placement: 1 Expected: 4
+Car: 1 HR: 776.11 Placement: 2 Expected: 1
+Car: 2 HR: 759.23 Placement: 3 Expected: 2
+Car: 3 HR: 742.19 Placement: 4 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 327.79 Placement: 1 Expected: 1
-Car: 1 HR: 306.17 Placement: 2 Expected: 2
-Car: 2 HR: 282.84 Placement: 3 Expected: 3
-Car: 3 HR: 257.30 Placement: 4 Expected: 4
+Car: 0 HR: 775.35 Placement: 2 Expected: 2
+Car: 1 HR: 776.11 Placement: 4 Expected: 1
+Car: 2 HR: 759.23 Placement: 3 Expected: 3
+Car: 3 HR: 742.19 Placement: 1 Expected: 4
 
 Running match 15...
 
-Adding score 20.66 to car 0
-Adding score 18.76 to car 1
-Adding score 16.76 to car 2
-Adding score 14.65 to car 3
+Adding score 17.52 to car 0
+Adding score 9.22 to car 1
+Adding score 13.58 to car 2
+Adding score 55.40 to car 3
 
 New HR
-Car: 0 HR: 348.44 Placement: 1 Expected: 1
-Car: 1 HR: 324.93 Placement: 2 Expected: 2
-Car: 2 HR: 299.60 Placement: 3 Expected: 3
-Car: 3 HR: 271.95 Placement: 4 Expected: 4
+Car: 0 HR: 792.87 Placement: 2 Expected: 2
+Car: 1 HR: 785.33 Placement: 4 Expected: 1
+Car: 2 HR: 772.80 Placement: 3 Expected: 3
+Car: 3 HR: 797.59 Placement: 1 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 348.44 Placement: 1 Expected: 1
-Car: 1 HR: 324.93 Placement: 2 Expected: 2
-Car: 2 HR: 299.60 Placement: 3 Expected: 3
-Car: 3 HR: 271.95 Placement: 4 Expected: 4
+Car: 0 HR: 792.87 Placement: 1 Expected: 2
+Car: 1 HR: 785.33 Placement: 2 Expected: 3
+Car: 2 HR: 772.80 Placement: 3 Expected: 4
+Car: 3 HR: 797.59 Placement: 4 Expected: 1
 
 Running match 16...
 
-Adding score 21.25 to car 0
-Adding score 19.30 to car 1
-Adding score 17.25 to car 2
-Adding score 15.10 to car 3
+Adding score 32.99 to car 0
+Adding score 26.83 to car 1
+Adding score 20.81 to car 2
+Adding score 9.39 to car 3
 
 New HR
-Car: 0 HR: 369.69 Placement: 1 Expected: 1
-Car: 1 HR: 344.23 Placement: 2 Expected: 2
-Car: 2 HR: 316.85 Placement: 3 Expected: 3
-Car: 3 HR: 287.05 Placement: 4 Expected: 4
+Car: 0 HR: 825.85 Placement: 1 Expected: 2
+Car: 1 HR: 812.16 Placement: 2 Expected: 3
+Car: 2 HR: 793.62 Placement: 3 Expected: 4
+Car: 3 HR: 806.98 Placement: 4 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 369.69 Placement: 1 Expected: 1
-Car: 1 HR: 344.23 Placement: 2 Expected: 2
-Car: 2 HR: 316.85 Placement: 3 Expected: 3
-Car: 3 HR: 287.05 Placement: 4 Expected: 4
+Car: 0 HR: 825.85 Placement: 1 Expected: 1
+Car: 1 HR: 812.16 Placement: 2 Expected: 2
+Car: 2 HR: 793.62 Placement: 3 Expected: 4
+Car: 3 HR: 806.98 Placement: 4 Expected: 3
 
 Running match 17...
 
-Adding score 21.85 to car 0
-Adding score 19.85 to car 1
-Adding score 17.75 to car 2
-Adding score 15.55 to car 3
+Adding score 22.11 to car 0
+Adding score 18.01 to car 1
+Adding score 21.02 to car 2
+Adding score 9.63 to car 3
 
 New HR
-Car: 0 HR: 391.54 Placement: 1 Expected: 1
-Car: 1 HR: 364.08 Placement: 2 Expected: 2
-Car: 2 HR: 334.61 Placement: 3 Expected: 3
-Car: 3 HR: 302.59 Placement: 4 Expected: 4
+Car: 0 HR: 847.97 Placement: 1 Expected: 1
+Car: 1 HR: 830.17 Placement: 2 Expected: 2
+Car: 2 HR: 814.64 Placement: 3 Expected: 4
+Car: 3 HR: 816.60 Placement: 4 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 391.54 Placement: 1 Expected: 1
-Car: 1 HR: 364.08 Placement: 2 Expected: 2
-Car: 2 HR: 334.61 Placement: 3 Expected: 3
-Car: 3 HR: 302.59 Placement: 4 Expected: 4
+Car: 0 HR: 847.97 Placement: 2 Expected: 1
+Car: 1 HR: 830.17 Placement: 4 Expected: 2
+Car: 2 HR: 814.64 Placement: 1 Expected: 4
+Car: 3 HR: 816.60 Placement: 3 Expected: 3
 
 Running match 18...
 
-Adding score 22.44 to car 0
-Adding score 20.40 to car 1
-Adding score 18.25 to car 2
-Adding score 16.00 to car 3
+Adding score 18.07 to car 0
+Adding score 9.69 to car 1
+Adding score 57.22 to car 2
+Adding score 14.14 to car 3
 
 New HR
-Car: 0 HR: 413.98 Placement: 1 Expected: 1
-Car: 1 HR: 384.48 Placement: 2 Expected: 2
-Car: 2 HR: 352.86 Placement: 3 Expected: 3
-Car: 3 HR: 318.59 Placement: 4 Expected: 4
+Car: 0 HR: 866.03 Placement: 2 Expected: 1
+Car: 1 HR: 839.86 Placement: 4 Expected: 2
+Car: 2 HR: 871.86 Placement: 1 Expected: 4
+Car: 3 HR: 830.74 Placement: 3 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 413.98 Placement: 1 Expected: 1
-Car: 1 HR: 384.48 Placement: 2 Expected: 2
-Car: 2 HR: 352.86 Placement: 3 Expected: 3
-Car: 3 HR: 318.59 Placement: 4 Expected: 4
+Car: 0 HR: 866.03 Placement: 4 Expected: 2
+Car: 1 HR: 839.86 Placement: 3 Expected: 3
+Car: 2 HR: 871.86 Placement: 2 Expected: 1
+Car: 3 HR: 830.74 Placement: 1 Expected: 4
 
 Running match 19...
 
-Adding score 23.03 to car 0
-Adding score 20.94 to car 1
-Adding score 18.74 to car 2
-Adding score 16.44 to car 3
+Adding score 9.75 to car 0
+Adding score 14.42 to car 1
+Adding score 18.40 to car 2
+Adding score 58.44 to car 3
 
 New HR
-Car: 0 HR: 437.01 Placement: 1 Expected: 1
-Car: 1 HR: 405.42 Placement: 2 Expected: 2
-Car: 2 HR: 371.60 Placement: 3 Expected: 3
-Car: 3 HR: 335.04 Placement: 4 Expected: 4
+Car: 0 HR: 875.78 Placement: 4 Expected: 2
+Car: 1 HR: 854.28 Placement: 3 Expected: 3
+Car: 2 HR: 890.26 Placement: 2 Expected: 1
+Car: 3 HR: 889.19 Placement: 1 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 437.01 Placement: 1 Expected: 1
-Car: 1 HR: 405.42 Placement: 2 Expected: 2
-Car: 2 HR: 371.60 Placement: 3 Expected: 3
-Car: 3 HR: 335.04 Placement: 4 Expected: 4
+Car: 0 HR: 875.78 Placement: 3 Expected: 3
+Car: 1 HR: 854.28 Placement: 1 Expected: 4
+Car: 2 HR: 890.26 Placement: 4 Expected: 1
+Car: 3 HR: 889.19 Placement: 2 Expected: 2
 
 Running match 20...
 
-Adding score 23.64 to car 0
-Adding score 21.49 to car 1
-Adding score 19.24 to car 2
-Adding score 16.89 to car 3
+Adding score 14.52 to car 0
+Adding score 59.35 to car 1
+Adding score 9.90 to car 2
+Adding score 18.81 to car 3
 
 New HR
-Car: 0 HR: 460.65 Placement: 1 Expected: 1
-Car: 1 HR: 426.91 Placement: 2 Expected: 2
-Car: 2 HR: 390.84 Placement: 3 Expected: 3
-Car: 3 HR: 351.93 Placement: 4 Expected: 4
+Car: 0 HR: 890.30 Placement: 3 Expected: 3
+Car: 1 HR: 913.63 Placement: 1 Expected: 4
+Car: 2 HR: 900.16 Placement: 4 Expected: 1
+Car: 3 HR: 908.00 Placement: 2 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 460.65 Placement: 1 Expected: 1
-Car: 1 HR: 426.91 Placement: 2 Expected: 2
-Car: 2 HR: 390.84 Placement: 3 Expected: 3
-Car: 3 HR: 351.93 Placement: 4 Expected: 4
+Car: 0 HR: 890.30 Placement: 1 Expected: 4
+Car: 1 HR: 913.63 Placement: 2 Expected: 1
+Car: 2 HR: 900.16 Placement: 3 Expected: 3
+Car: 3 HR: 908.00 Placement: 4 Expected: 2
 
 Running match 21...
 
-Adding score 24.23 to car 0
-Adding score 22.03 to car 1
-Adding score 19.74 to car 2
-Adding score 17.34 to car 3
+Adding score 59.72 to car 0
+Adding score 19.05 to car 1
+Adding score 14.70 to car 2
+Adding score 10.11 to car 3
 
 New HR
-Car: 0 HR: 484.88 Placement: 1 Expected: 1
-Car: 1 HR: 448.94 Placement: 2 Expected: 2
-Car: 2 HR: 410.58 Placement: 3 Expected: 3
-Car: 3 HR: 369.27 Placement: 4 Expected: 4
+Car: 0 HR: 950.02 Placement: 1 Expected: 4
+Car: 1 HR: 932.68 Placement: 2 Expected: 1
+Car: 2 HR: 914.86 Placement: 3 Expected: 3
+Car: 3 HR: 918.10 Placement: 4 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 484.88 Placement: 1 Expected: 1
-Car: 1 HR: 448.94 Placement: 2 Expected: 2
-Car: 2 HR: 410.58 Placement: 3 Expected: 3
-Car: 3 HR: 369.27 Placement: 4 Expected: 4
+Car: 0 HR: 950.02 Placement: 3 Expected: 1
+Car: 1 HR: 932.68 Placement: 2 Expected: 2
+Car: 2 HR: 914.86 Placement: 1 Expected: 4
+Car: 3 HR: 918.10 Placement: 4 Expected: 3
 
 Running match 22...
 
-Adding score 24.83 to car 0
-Adding score 22.58 to car 1
-Adding score 20.23 to car 2
-Adding score 17.78 to car 3
+Adding score 14.62 to car 0
+Adding score 19.44 to car 1
+Adding score 60.62 to car 2
+Adding score 10.37 to car 3
 
 New HR
-Car: 0 HR: 509.70 Placement: 1 Expected: 1
-Car: 1 HR: 471.52 Placement: 2 Expected: 2
-Car: 2 HR: 430.81 Placement: 3 Expected: 3
-Car: 3 HR: 387.05 Placement: 4 Expected: 4
+Car: 0 HR: 964.64 Placement: 3 Expected: 1
+Car: 1 HR: 952.13 Placement: 2 Expected: 2
+Car: 2 HR: 975.48 Placement: 1 Expected: 4
+Car: 3 HR: 928.47 Placement: 4 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 509.70 Placement: 1 Expected: 1
-Car: 1 HR: 471.52 Placement: 2 Expected: 2
-Car: 2 HR: 430.81 Placement: 3 Expected: 3
-Car: 3 HR: 387.05 Placement: 4 Expected: 4
+Car: 0 HR: 964.64 Placement: 3 Expected: 2
+Car: 1 HR: 952.13 Placement: 1 Expected: 3
+Car: 2 HR: 975.48 Placement: 4 Expected: 1
+Car: 3 HR: 928.47 Placement: 2 Expected: 4
 
 Running match 23...
 
-Adding score 25.43 to car 0
-Adding score 23.13 to car 1
-Adding score 20.73 to car 2
-Adding score 18.23 to car 3
+Adding score 15.08 to car 0
+Adding score 48.78 to car 1
+Adding score 10.28 to car 2
+Adding score 40.26 to car 3
 
 New HR
-Car: 0 HR: 535.13 Placement: 1 Expected: 1
-Car: 1 HR: 494.66 Placement: 2 Expected: 2
-Car: 2 HR: 451.54 Placement: 3 Expected: 3
-Car: 3 HR: 405.28 Placement: 4 Expected: 4
+Car: 0 HR: 979.72 Placement: 3 Expected: 2
+Car: 1 HR: 1000.91 Placement: 1 Expected: 3
+Car: 2 HR: 985.76 Placement: 4 Expected: 1
+Car: 3 HR: 968.73 Placement: 2 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 535.13 Placement: 1 Expected: 1
-Car: 1 HR: 494.66 Placement: 2 Expected: 2
-Car: 2 HR: 451.54 Placement: 3 Expected: 3
-Car: 3 HR: 405.28 Placement: 4 Expected: 4
+Car: 0 HR: 979.72 Placement: 2 Expected: 3
+Car: 1 HR: 1000.91 Placement: 1 Expected: 1
+Car: 2 HR: 985.76 Placement: 4 Expected: 2
+Car: 3 HR: 968.73 Placement: 3 Expected: 4
 
 Running match 24...
 
-Adding score 26.03 to car 0
-Adding score 23.68 to car 1
-Adding score 21.23 to car 2
-Adding score 18.68 to car 3
+Adding score 29.97 to car 0
+Adding score 24.42 to car 1
+Adding score 10.57 to car 2
+Adding score 23.15 to car 3
 
 New HR
-Car: 0 HR: 561.16 Placement: 1 Expected: 1
-Car: 1 HR: 518.34 Placement: 2 Expected: 2
-Car: 2 HR: 472.77 Placement: 3 Expected: 3
-Car: 3 HR: 423.96 Placement: 4 Expected: 4
+Car: 0 HR: 1009.69 Placement: 2 Expected: 3
+Car: 1 HR: 1025.33 Placement: 1 Expected: 1
+Car: 2 HR: 996.33 Placement: 4 Expected: 2
+Car: 3 HR: 991.89 Placement: 3 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 561.16 Placement: 1 Expected: 1
-Car: 1 HR: 518.34 Placement: 2 Expected: 2
-Car: 2 HR: 472.77 Placement: 3 Expected: 3
-Car: 3 HR: 423.96 Placement: 4 Expected: 4
+Car: 0 HR: 1009.69 Placement: 3 Expected: 2
+Car: 1 HR: 1025.33 Placement: 4 Expected: 1
+Car: 2 HR: 996.33 Placement: 1 Expected: 3
+Car: 3 HR: 991.89 Placement: 2 Expected: 4
 
 Running match 25...
 
-Adding score 26.63 to car 0
-Adding score 24.23 to car 1
-Adding score 21.73 to car 2
-Adding score 19.12 to car 3
+Adding score 15.52 to car 0
+Adding score 10.57 to car 1
+Adding score 50.27 to car 2
+Adding score 40.95 to car 3
 
 New HR
-Car: 0 HR: 587.79 Placement: 1 Expected: 1
-Car: 1 HR: 542.57 Placement: 2 Expected: 2
-Car: 2 HR: 494.49 Placement: 3 Expected: 3
-Car: 3 HR: 443.08 Placement: 4 Expected: 4
+Car: 0 HR: 1025.21 Placement: 3 Expected: 2
+Car: 1 HR: 1035.89 Placement: 4 Expected: 1
+Car: 2 HR: 1046.60 Placement: 1 Expected: 3
+Car: 3 HR: 1032.83 Placement: 2 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 587.79 Placement: 1 Expected: 1
-Car: 1 HR: 542.57 Placement: 2 Expected: 2
-Car: 2 HR: 494.49 Placement: 3 Expected: 3
-Car: 3 HR: 443.08 Placement: 4 Expected: 4
+Car: 0 HR: 1025.21 Placement: 2 Expected: 4
+Car: 1 HR: 1035.89 Placement: 4 Expected: 2
+Car: 2 HR: 1046.60 Placement: 3 Expected: 1
+Car: 3 HR: 1032.83 Placement: 1 Expected: 3
 
 Running match 26...
 
-Adding score 27.23 to car 0
-Adding score 24.78 to car 1
-Adding score 22.22 to car 2
-Adding score 19.57 to car 3
+Adding score 41.34 to car 0
+Adding score 10.85 to car 1
+Adding score 15.59 to car 2
+Adding score 50.75 to car 3
 
 New HR
-Car: 0 HR: 615.01 Placement: 1 Expected: 1
-Car: 1 HR: 567.34 Placement: 2 Expected: 2
-Car: 2 HR: 516.72 Placement: 3 Expected: 3
-Car: 3 HR: 462.65 Placement: 4 Expected: 4
+Car: 0 HR: 1066.55 Placement: 2 Expected: 4
+Car: 1 HR: 1046.75 Placement: 4 Expected: 2
+Car: 2 HR: 1062.19 Placement: 3 Expected: 1
+Car: 3 HR: 1083.59 Placement: 1 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 615.01 Placement: 1 Expected: 1
-Car: 1 HR: 567.34 Placement: 2 Expected: 2
-Car: 2 HR: 516.72 Placement: 3 Expected: 3
-Car: 3 HR: 462.65 Placement: 4 Expected: 4
+Car: 0 HR: 1066.55 Placement: 2 Expected: 2
+Car: 1 HR: 1046.75 Placement: 4 Expected: 4
+Car: 2 HR: 1062.19 Placement: 1 Expected: 3
+Car: 3 HR: 1083.59 Placement: 3 Expected: 1
 
 Running match 27...
 
-Adding score 27.83 to car 0
-Adding score 25.33 to car 1
-Adding score 22.72 to car 2
-Adding score 20.01 to car 3
+Adding score 20.79 to car 0
+Adding score 11.14 to car 1
+Adding score 51.48 to car 2
+Adding score 15.67 to car 3
 
 New HR
-Car: 0 HR: 642.84 Placement: 1 Expected: 1
-Car: 1 HR: 592.67 Placement: 2 Expected: 2
-Car: 2 HR: 539.44 Placement: 3 Expected: 3
-Car: 3 HR: 482.66 Placement: 4 Expected: 4
+Car: 0 HR: 1087.34 Placement: 2 Expected: 2
+Car: 1 HR: 1057.89 Placement: 4 Expected: 4
+Car: 2 HR: 1113.68 Placement: 1 Expected: 3
+Car: 3 HR: 1099.26 Placement: 3 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 642.84 Placement: 1 Expected: 1
-Car: 1 HR: 592.67 Placement: 2 Expected: 2
-Car: 2 HR: 539.44 Placement: 3 Expected: 3
-Car: 3 HR: 482.66 Placement: 4 Expected: 4
+Car: 0 HR: 1087.34 Placement: 4 Expected: 3
+Car: 1 HR: 1057.89 Placement: 1 Expected: 4
+Car: 2 HR: 1113.68 Placement: 2 Expected: 1
+Car: 3 HR: 1099.26 Placement: 3 Expected: 2
 
 Running match 28...
 
-Adding score 28.43 to car 0
-Adding score 25.88 to car 1
-Adding score 23.22 to car 2
-Adding score 20.46 to car 3
+Adding score 11.16 to car 0
+Adding score 66.26 to car 1
+Adding score 20.84 to car 2
+Adding score 16.00 to car 3
 
 New HR
-Car: 0 HR: 671.27 Placement: 1 Expected: 1
-Car: 1 HR: 618.55 Placement: 2 Expected: 2
-Car: 2 HR: 562.66 Placement: 3 Expected: 3
-Car: 3 HR: 503.12 Placement: 4 Expected: 4
+Car: 0 HR: 1098.50 Placement: 4 Expected: 3
+Car: 1 HR: 1124.14 Placement: 1 Expected: 4
+Car: 2 HR: 1134.52 Placement: 2 Expected: 1
+Car: 3 HR: 1115.26 Placement: 3 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 671.27 Placement: 1 Expected: 1
-Car: 1 HR: 618.55 Placement: 2 Expected: 2
-Car: 2 HR: 562.66 Placement: 3 Expected: 3
-Car: 3 HR: 503.12 Placement: 4 Expected: 4
+Car: 0 HR: 1098.50 Placement: 1 Expected: 4
+Car: 1 HR: 1124.14 Placement: 4 Expected: 2
+Car: 2 HR: 1134.52 Placement: 2 Expected: 1
+Car: 3 HR: 1115.26 Placement: 3 Expected: 3
 
 Running match 29...
 
-Adding score 29.03 to car 0
-Adding score 26.43 to car 1
-Adding score 23.72 to car 2
-Adding score 20.90 to car 3
+Adding score 66.61 to car 0
+Adding score 11.25 to car 1
+Adding score 21.17 to car 2
+Adding score 16.35 to car 3
 
 New HR
-Car: 0 HR: 700.30 Placement: 1 Expected: 1
-Car: 1 HR: 644.98 Placement: 2 Expected: 2
-Car: 2 HR: 586.37 Placement: 3 Expected: 3
-Car: 3 HR: 524.02 Placement: 4 Expected: 4
+Car: 0 HR: 1165.10 Placement: 1 Expected: 4
+Car: 1 HR: 1135.39 Placement: 4 Expected: 2
+Car: 2 HR: 1155.69 Placement: 2 Expected: 1
+Car: 3 HR: 1131.61 Placement: 3 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 700.30 Placement: 1 Expected: 1
-Car: 1 HR: 644.98 Placement: 2 Expected: 2
-Car: 2 HR: 586.37 Placement: 3 Expected: 3
-Car: 3 HR: 524.02 Placement: 4 Expected: 4
+Car: 0 HR: 1165.10 Placement: 4 Expected: 1
+Car: 1 HR: 1135.39 Placement: 3 Expected: 3
+Car: 2 HR: 1155.69 Placement: 1 Expected: 2
+Car: 3 HR: 1131.61 Placement: 2 Expected: 4
 
 Running match 30...
 
-Adding score 29.63 to car 0
-Adding score 26.98 to car 1
-Adding score 24.21 to car 2
-Adding score 21.35 to car 3
+Adding score 11.31 to car 0
+Adding score 16.69 to car 1
+Adding score 39.80 to car 2
+Adding score 43.54 to car 3
 
 New HR
-Car: 0 HR: 729.93 Placement: 1 Expected: 1
-Car: 1 HR: 671.96 Placement: 2 Expected: 2
-Car: 2 HR: 610.59 Placement: 3 Expected: 3
-Car: 3 HR: 545.37 Placement: 4 Expected: 4
+Car: 0 HR: 1176.41 Placement: 4 Expected: 1
+Car: 1 HR: 1152.07 Placement: 3 Expected: 3
+Car: 2 HR: 1195.49 Placement: 1 Expected: 2
+Car: 3 HR: 1175.15 Placement: 2 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 729.93 Placement: 1 Expected: 1
-Car: 1 HR: 671.96 Placement: 2 Expected: 2
-Car: 2 HR: 610.59 Placement: 3 Expected: 3
-Car: 3 HR: 545.37 Placement: 4 Expected: 4
+Car: 0 HR: 1176.41 Placement: 4 Expected: 2
+Car: 1 HR: 1152.07 Placement: 1 Expected: 4
+Car: 2 HR: 1195.49 Placement: 3 Expected: 1
+Car: 3 HR: 1175.15 Placement: 2 Expected: 3
 
 Running match 31...
 
-Adding score 30.23 to car 0
-Adding score 27.53 to car 1
-Adding score 24.71 to car 2
-Adding score 21.79 to car 3
+Adding score 11.56 to car 0
+Adding score 68.35 to car 1
+Adding score 16.55 to car 2
+Adding score 32.92 to car 3
 
 New HR
-Car: 0 HR: 760.16 Placement: 1 Expected: 1
-Car: 1 HR: 699.48 Placement: 2 Expected: 2
-Car: 2 HR: 635.30 Placement: 3 Expected: 3
-Car: 3 HR: 567.16 Placement: 4 Expected: 4
+Car: 0 HR: 1187.97 Placement: 4 Expected: 2
+Car: 1 HR: 1220.43 Placement: 1 Expected: 4
+Car: 2 HR: 1212.04 Placement: 3 Expected: 1
+Car: 3 HR: 1208.06 Placement: 2 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 760.16 Placement: 1 Expected: 1
-Car: 1 HR: 699.48 Placement: 2 Expected: 2
-Car: 2 HR: 635.30 Placement: 3 Expected: 3
-Car: 3 HR: 567.16 Placement: 4 Expected: 4
+Car: 0 HR: 1187.97 Placement: 4 Expected: 4
+Car: 1 HR: 1220.43 Placement: 2 Expected: 1
+Car: 2 HR: 1212.04 Placement: 3 Expected: 2
+Car: 3 HR: 1208.06 Placement: 1 Expected: 3
 
 Running match 32...
 
-Adding score 30.84 to car 0
-Adding score 28.08 to car 1
-Adding score 25.21 to car 2
-Adding score 22.24 to car 3
+Adding score 11.85 to car 0
+Adding score 21.96 to car 1
+Adding score 16.82 to car 2
+Adding score 54.70 to car 3
 
 New HR
-Car: 0 HR: 791.00 Placement: 1 Expected: 1
-Car: 1 HR: 727.57 Placement: 2 Expected: 2
-Car: 2 HR: 660.51 Placement: 3 Expected: 3
-Car: 3 HR: 589.40 Placement: 4 Expected: 4
+Car: 0 HR: 1199.82 Placement: 4 Expected: 4
+Car: 1 HR: 1242.39 Placement: 2 Expected: 1
+Car: 2 HR: 1228.86 Placement: 3 Expected: 2
+Car: 3 HR: 1262.76 Placement: 1 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 791.00 Placement: 1 Expected: 1
-Car: 1 HR: 727.57 Placement: 2 Expected: 2
-Car: 2 HR: 660.51 Placement: 3 Expected: 3
-Car: 3 HR: 589.40 Placement: 4 Expected: 4
+Car: 0 HR: 1199.82 Placement: 2 Expected: 4
+Car: 1 HR: 1242.39 Placement: 4 Expected: 2
+Car: 2 HR: 1228.86 Placement: 3 Expected: 3
+Car: 3 HR: 1262.76 Placement: 1 Expected: 1
 
 Running match 33...
 
-Adding score 31.44 to car 0
-Adding score 28.63 to car 1
-Adding score 25.71 to car 2
-Adding score 22.68 to car 3
+Adding score 45.45 to car 0
+Adding score 11.80 to car 1
+Adding score 17.20 to car 2
+Adding score 27.22 to car 3
 
 New HR
-Car: 0 HR: 822.44 Placement: 1 Expected: 1
-Car: 1 HR: 756.20 Placement: 2 Expected: 2
-Car: 2 HR: 686.22 Placement: 3 Expected: 3
-Car: 3 HR: 612.08 Placement: 4 Expected: 4
+Car: 0 HR: 1245.27 Placement: 2 Expected: 4
+Car: 1 HR: 1254.19 Placement: 4 Expected: 2
+Car: 2 HR: 1246.06 Placement: 3 Expected: 3
+Car: 3 HR: 1289.98 Placement: 1 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 822.44 Placement: 1 Expected: 1
-Car: 1 HR: 756.20 Placement: 2 Expected: 2
-Car: 2 HR: 686.22 Placement: 3 Expected: 3
-Car: 3 HR: 612.08 Placement: 4 Expected: 4
+Car: 0 HR: 1245.27 Placement: 2 Expected: 4
+Car: 1 HR: 1254.19 Placement: 1 Expected: 2
+Car: 2 HR: 1246.06 Placement: 3 Expected: 3
+Car: 3 HR: 1289.98 Placement: 4 Expected: 1
 
 Running match 34...
 
-Adding score 32.05 to car 0
-Adding score 29.18 to car 1
-Adding score 26.21 to car 2
-Adding score 23.13 to car 3
+Adding score 45.64 to car 0
+Adding score 42.02 to car 1
+Adding score 17.53 to car 2
+Adding score 11.78 to car 3
 
 New HR
-Car: 0 HR: 854.49 Placement: 1 Expected: 1
-Car: 1 HR: 785.38 Placement: 2 Expected: 2
-Car: 2 HR: 712.42 Placement: 3 Expected: 3
-Car: 3 HR: 635.21 Placement: 4 Expected: 4
+Car: 0 HR: 1290.91 Placement: 2 Expected: 4
+Car: 1 HR: 1296.21 Placement: 1 Expected: 2
+Car: 2 HR: 1263.59 Placement: 3 Expected: 3
+Car: 3 HR: 1301.76 Placement: 4 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 854.49 Placement: 1 Expected: 1
-Car: 1 HR: 785.38 Placement: 2 Expected: 2
-Car: 2 HR: 712.42 Placement: 3 Expected: 3
-Car: 3 HR: 635.21 Placement: 4 Expected: 4
+Car: 0 HR: 1290.91 Placement: 2 Expected: 3
+Car: 1 HR: 1296.21 Placement: 4 Expected: 2
+Car: 2 HR: 1263.59 Placement: 3 Expected: 4
+Car: 3 HR: 1301.76 Placement: 1 Expected: 1
 
 Running match 35...
 
-Adding score 32.65 to car 0
-Adding score 29.73 to car 1
-Adding score 26.70 to car 2
-Adding score 23.57 to car 3
+Adding score 34.18 to car 0
+Adding score 12.06 to car 1
+Adding score 26.58 to car 2
+Adding score 28.07 to car 3
 
 New HR
-Car: 0 HR: 887.14 Placement: 1 Expected: 1
-Car: 1 HR: 815.12 Placement: 2 Expected: 2
-Car: 2 HR: 739.13 Placement: 3 Expected: 3
-Car: 3 HR: 658.78 Placement: 4 Expected: 4
+Car: 0 HR: 1325.09 Placement: 2 Expected: 3
+Car: 1 HR: 1308.27 Placement: 4 Expected: 2
+Car: 2 HR: 1290.17 Placement: 3 Expected: 4
+Car: 3 HR: 1329.83 Placement: 1 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 887.14 Placement: 1 Expected: 1
-Car: 1 HR: 815.12 Placement: 2 Expected: 2
-Car: 2 HR: 739.13 Placement: 3 Expected: 3
-Car: 3 HR: 658.78 Placement: 4 Expected: 4
+Car: 0 HR: 1325.09 Placement: 2 Expected: 2
+Car: 1 HR: 1308.27 Placement: 1 Expected: 3
+Car: 2 HR: 1290.17 Placement: 3 Expected: 4
+Car: 3 HR: 1329.83 Placement: 4 Expected: 1
 
 Running match 36...
 
-Adding score 33.25 to car 0
-Adding score 30.29 to car 1
-Adding score 27.20 to car 2
-Adding score 24.01 to car 3
+Adding score 22.97 to car 0
+Adding score 57.23 to car 1
+Adding score 26.87 to car 2
+Adding score 12.13 to car 3
 
 New HR
-Car: 0 HR: 920.39 Placement: 1 Expected: 1
-Car: 1 HR: 845.40 Placement: 2 Expected: 2
-Car: 2 HR: 766.33 Placement: 3 Expected: 3
-Car: 3 HR: 682.80 Placement: 4 Expected: 4
+Car: 0 HR: 1348.06 Placement: 2 Expected: 2
+Car: 1 HR: 1365.50 Placement: 1 Expected: 3
+Car: 2 HR: 1317.04 Placement: 3 Expected: 4
+Car: 3 HR: 1341.96 Placement: 4 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 920.39 Placement: 1 Expected: 1
-Car: 1 HR: 845.40 Placement: 2 Expected: 2
-Car: 2 HR: 766.33 Placement: 3 Expected: 3
-Car: 3 HR: 682.80 Placement: 4 Expected: 4
+Car: 0 HR: 1348.06 Placement: 2 Expected: 2
+Car: 1 HR: 1365.50 Placement: 1 Expected: 1
+Car: 2 HR: 1317.04 Placement: 3 Expected: 4
+Car: 3 HR: 1341.96 Placement: 4 Expected: 3
 
 Running match 37...
 
-Adding score 33.85 to car 0
-Adding score 30.84 to car 1
-Adding score 27.70 to car 2
-Adding score 24.46 to car 3
+Adding score 23.21 to car 0
+Adding score 28.54 to car 1
+Adding score 27.09 to car 2
+Adding score 12.38 to car 3
 
 New HR
-Car: 0 HR: 954.24 Placement: 1 Expected: 1
-Car: 1 HR: 876.24 Placement: 2 Expected: 2
-Car: 2 HR: 794.03 Placement: 3 Expected: 3
-Car: 3 HR: 707.25 Placement: 4 Expected: 4
+Car: 0 HR: 1371.27 Placement: 2 Expected: 2
+Car: 1 HR: 1394.04 Placement: 1 Expected: 1
+Car: 2 HR: 1344.13 Placement: 3 Expected: 4
+Car: 3 HR: 1354.34 Placement: 4 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 954.24 Placement: 1 Expected: 1
-Car: 1 HR: 876.24 Placement: 2 Expected: 2
-Car: 2 HR: 794.03 Placement: 3 Expected: 3
-Car: 3 HR: 707.25 Placement: 4 Expected: 4
+Car: 0 HR: 1371.27 Placement: 3 Expected: 2
+Car: 1 HR: 1394.04 Placement: 4 Expected: 1
+Car: 2 HR: 1344.13 Placement: 2 Expected: 4
+Car: 3 HR: 1354.34 Placement: 1 Expected: 3
 
 Running match 38...
 
-Adding score 34.46 to car 0
-Adding score 31.39 to car 1
-Adding score 28.20 to car 2
-Adding score 24.90 to car 3
+Adding score 18.09 to car 0
+Adding score 12.30 to car 1
+Adding score 47.78 to car 2
+Adding score 58.54 to car 3
 
 New HR
-Car: 0 HR: 988.70 Placement: 1 Expected: 1
-Car: 1 HR: 907.63 Placement: 2 Expected: 2
-Car: 2 HR: 822.23 Placement: 3 Expected: 3
-Car: 3 HR: 732.16 Placement: 4 Expected: 4
+Car: 0 HR: 1389.37 Placement: 3 Expected: 2
+Car: 1 HR: 1406.34 Placement: 4 Expected: 1
+Car: 2 HR: 1391.91 Placement: 2 Expected: 4
+Car: 3 HR: 1412.88 Placement: 1 Expected: 3
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 988.70 Placement: 1 Expected: 1
-Car: 1 HR: 907.63 Placement: 2 Expected: 2
-Car: 2 HR: 822.23 Placement: 3 Expected: 3
-Car: 3 HR: 732.16 Placement: 4 Expected: 4
+Car: 0 HR: 1389.37 Placement: 3 Expected: 4
+Car: 1 HR: 1406.34 Placement: 2 Expected: 2
+Car: 2 HR: 1391.91 Placement: 4 Expected: 3
+Car: 3 HR: 1412.88 Placement: 1 Expected: 1
 
 Running match 39...
 
-Adding score 35.06 to car 0
-Adding score 31.94 to car 1
-Adding score 28.70 to car 2
-Adding score 25.35 to car 3
+Adding score 27.43 to car 0
+Adding score 23.73 to car 1
+Adding score 12.68 to car 2
+Adding score 29.29 to car 3
 
 New HR
-Car: 0 HR: 1023.76 Placement: 1 Expected: 1
-Car: 1 HR: 939.57 Placement: 2 Expected: 2
-Car: 2 HR: 850.93 Placement: 3 Expected: 3
-Car: 3 HR: 757.50 Placement: 4 Expected: 4
+Car: 0 HR: 1416.80 Placement: 3 Expected: 4
+Car: 1 HR: 1430.07 Placement: 2 Expected: 2
+Car: 2 HR: 1404.59 Placement: 4 Expected: 3
+Car: 3 HR: 1442.17 Placement: 1 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1023.76 Placement: 1 Expected: 1
-Car: 1 HR: 939.57 Placement: 2 Expected: 2
-Car: 2 HR: 850.93 Placement: 3 Expected: 3
-Car: 3 HR: 757.50 Placement: 4 Expected: 4
+Car: 0 HR: 1416.80 Placement: 2 Expected: 3
+Car: 1 HR: 1430.07 Placement: 1 Expected: 2
+Car: 2 HR: 1404.59 Placement: 3 Expected: 4
+Car: 3 HR: 1442.17 Placement: 4 Expected: 1
 
 Running match 40...
 
-Adding score 35.66 to car 0
-Adding score 32.49 to car 1
-Adding score 29.20 to car 2
-Adding score 25.79 to car 3
+Adding score 36.16 to car 0
+Adding score 44.43 to car 1
+Adding score 27.91 to car 2
+Adding score 12.62 to car 3
 
 New HR
-Car: 0 HR: 1059.43 Placement: 1 Expected: 1
-Car: 1 HR: 972.07 Placement: 2 Expected: 2
-Car: 2 HR: 880.13 Placement: 3 Expected: 3
-Car: 3 HR: 783.29 Placement: 4 Expected: 4
+Car: 0 HR: 1452.96 Placement: 2 Expected: 3
+Car: 1 HR: 1474.50 Placement: 1 Expected: 2
+Car: 2 HR: 1432.49 Placement: 3 Expected: 4
+Car: 3 HR: 1454.79 Placement: 4 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1059.43 Placement: 1 Expected: 1
-Car: 1 HR: 972.07 Placement: 2 Expected: 2
-Car: 2 HR: 880.13 Placement: 3 Expected: 3
-Car: 3 HR: 783.29 Placement: 4 Expected: 4
+Car: 0 HR: 1452.96 Placement: 4 Expected: 3
+Car: 1 HR: 1474.50 Placement: 1 Expected: 1
+Car: 2 HR: 1432.49 Placement: 3 Expected: 4
+Car: 3 HR: 1454.79 Placement: 2 Expected: 2
 
 Running match 41...
 
-Adding score 36.27 to car 0
-Adding score 33.05 to car 1
-Adding score 29.70 to car 2
-Adding score 26.23 to car 3
+Adding score 12.87 to car 0
+Adding score 29.74 to car 1
+Adding score 28.11 to car 2
+Adding score 24.21 to car 3
 
 New HR
-Car: 0 HR: 1095.70 Placement: 1 Expected: 1
-Car: 1 HR: 1005.11 Placement: 2 Expected: 2
-Car: 2 HR: 909.82 Placement: 3 Expected: 3
-Car: 3 HR: 809.53 Placement: 4 Expected: 4
+Car: 0 HR: 1465.84 Placement: 4 Expected: 3
+Car: 1 HR: 1504.24 Placement: 1 Expected: 1
+Car: 2 HR: 1460.60 Placement: 3 Expected: 4
+Car: 3 HR: 1479.00 Placement: 2 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1095.70 Placement: 1 Expected: 1
-Car: 1 HR: 1005.11 Placement: 2 Expected: 2
-Car: 2 HR: 909.82 Placement: 3 Expected: 3
-Car: 3 HR: 809.53 Placement: 4 Expected: 4
+Car: 0 HR: 1465.84 Placement: 2 Expected: 3
+Car: 1 HR: 1504.24 Placement: 3 Expected: 1
+Car: 2 HR: 1460.60 Placement: 1 Expected: 4
+Car: 3 HR: 1479.00 Placement: 4 Expected: 2
 
 Running match 42...
 
-Adding score 36.88 to car 0
-Adding score 33.60 to car 1
-Adding score 30.19 to car 2
-Adding score 26.68 to car 3
+Adding score 37.07 to car 0
+Adding score 18.55 to car 1
+Adding score 76.25 to car 2
+Adding score 12.96 to car 3
 
 New HR
-Car: 0 HR: 1132.58 Placement: 1 Expected: 1
-Car: 1 HR: 1038.71 Placement: 2 Expected: 2
-Car: 2 HR: 940.02 Placement: 3 Expected: 3
-Car: 3 HR: 836.21 Placement: 4 Expected: 4
+Car: 0 HR: 1502.91 Placement: 2 Expected: 3
+Car: 1 HR: 1522.80 Placement: 3 Expected: 1
+Car: 2 HR: 1536.86 Placement: 1 Expected: 4
+Car: 3 HR: 1491.97 Placement: 4 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1132.58 Placement: 1 Expected: 1
-Car: 1 HR: 1038.71 Placement: 2 Expected: 2
-Car: 2 HR: 940.02 Placement: 3 Expected: 3
-Car: 3 HR: 836.21 Placement: 4 Expected: 4
+Car: 0 HR: 1502.91 Placement: 4 Expected: 3
+Car: 1 HR: 1522.80 Placement: 3 Expected: 2
+Car: 2 HR: 1536.86 Placement: 2 Expected: 1
+Car: 3 HR: 1491.97 Placement: 1 Expected: 4
 
 Running match 43...
 
-Adding score 37.48 to car 0
-Adding score 34.15 to car 1
-Adding score 30.69 to car 2
-Adding score 27.12 to car 3
+Adding score 13.19 to car 0
+Adding score 18.86 to car 1
+Adding score 24.60 to car 2
+Adding score 77.34 to car 3
 
 New HR
-Car: 0 HR: 1170.06 Placement: 1 Expected: 1
-Car: 1 HR: 1072.87 Placement: 2 Expected: 2
-Car: 2 HR: 970.71 Placement: 3 Expected: 3
-Car: 3 HR: 863.33 Placement: 4 Expected: 4
+Car: 0 HR: 1516.10 Placement: 4 Expected: 3
+Car: 1 HR: 1541.66 Placement: 3 Expected: 2
+Car: 2 HR: 1561.46 Placement: 2 Expected: 1
+Car: 3 HR: 1569.30 Placement: 1 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1170.06 Placement: 1 Expected: 1
-Car: 1 HR: 1072.87 Placement: 2 Expected: 2
-Car: 2 HR: 970.71 Placement: 3 Expected: 3
-Car: 3 HR: 863.33 Placement: 4 Expected: 4
+Car: 0 HR: 1516.10 Placement: 2 Expected: 4
+Car: 1 HR: 1541.66 Placement: 3 Expected: 3
+Car: 2 HR: 1561.46 Placement: 4 Expected: 2
+Car: 3 HR: 1569.30 Placement: 1 Expected: 1
 
 Running match 44...
 
-Adding score 38.09 to car 0
-Adding score 34.70 to car 1
-Adding score 31.19 to car 2
-Adding score 27.57 to car 3
+Adding score 50.73 to car 0
+Adding score 19.27 to car 1
+Adding score 13.19 to car 2
+Adding score 30.68 to car 3
 
 New HR
-Car: 0 HR: 1208.15 Placement: 1 Expected: 1
-Car: 1 HR: 1107.57 Placement: 2 Expected: 2
-Car: 2 HR: 1001.90 Placement: 3 Expected: 3
-Car: 3 HR: 890.89 Placement: 4 Expected: 4
+Car: 0 HR: 1566.84 Placement: 2 Expected: 4
+Car: 1 HR: 1560.93 Placement: 3 Expected: 3
+Car: 2 HR: 1574.65 Placement: 4 Expected: 2
+Car: 3 HR: 1599.98 Placement: 1 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1208.15 Placement: 1 Expected: 1
-Car: 1 HR: 1107.57 Placement: 2 Expected: 2
-Car: 2 HR: 1001.90 Placement: 3 Expected: 3
-Car: 3 HR: 890.89 Placement: 4 Expected: 4
+Car: 0 HR: 1566.84 Placement: 1 Expected: 3
+Car: 1 HR: 1560.93 Placement: 2 Expected: 4
+Car: 2 HR: 1574.65 Placement: 4 Expected: 2
+Car: 3 HR: 1599.98 Placement: 3 Expected: 1
 
 Running match 45...
 
-Adding score 38.69 to car 0
-Adding score 35.26 to car 1
-Adding score 31.69 to car 2
-Adding score 28.01 to car 3
+Adding score 62.76 to car 0
+Adding score 51.03 to car 1
+Adding score 13.40 to car 2
+Adding score 19.18 to car 3
 
 New HR
-Car: 0 HR: 1246.84 Placement: 1 Expected: 1
-Car: 1 HR: 1142.83 Placement: 2 Expected: 2
-Car: 2 HR: 1033.60 Placement: 3 Expected: 3
-Car: 3 HR: 918.90 Placement: 4 Expected: 4
+Car: 0 HR: 1629.59 Placement: 1 Expected: 3
+Car: 1 HR: 1611.96 Placement: 2 Expected: 4
+Car: 2 HR: 1588.06 Placement: 4 Expected: 2
+Car: 3 HR: 1619.16 Placement: 3 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1246.84 Placement: 1 Expected: 1
-Car: 1 HR: 1142.83 Placement: 2 Expected: 2
-Car: 2 HR: 1033.60 Placement: 3 Expected: 3
-Car: 3 HR: 918.90 Placement: 4 Expected: 4
+Car: 0 HR: 1629.59 Placement: 4 Expected: 1
+Car: 1 HR: 1611.96 Placement: 1 Expected: 3
+Car: 2 HR: 1588.06 Placement: 2 Expected: 4
+Car: 3 HR: 1619.16 Placement: 3 Expected: 2
 
 Running match 46...
 
-Adding score 39.30 to car 0
-Adding score 35.81 to car 1
-Adding score 32.19 to car 2
-Adding score 28.45 to car 3
+Adding score 13.45 to car 0
+Adding score 63.25 to car 1
+Adding score 51.77 to car 2
+Adding score 19.59 to car 3
 
 New HR
-Car: 0 HR: 1286.13 Placement: 1 Expected: 1
-Car: 1 HR: 1178.64 Placement: 2 Expected: 2
-Car: 2 HR: 1065.78 Placement: 3 Expected: 3
-Car: 3 HR: 947.35 Placement: 4 Expected: 4
+Car: 0 HR: 1643.05 Placement: 4 Expected: 1
+Car: 1 HR: 1675.21 Placement: 1 Expected: 3
+Car: 2 HR: 1639.83 Placement: 2 Expected: 4
+Car: 3 HR: 1638.76 Placement: 3 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1286.13 Placement: 1 Expected: 1
-Car: 1 HR: 1178.64 Placement: 2 Expected: 2
-Car: 2 HR: 1065.78 Placement: 3 Expected: 3
-Car: 3 HR: 947.35 Placement: 4 Expected: 4
+Car: 0 HR: 1643.05 Placement: 4 Expected: 2
+Car: 1 HR: 1675.21 Placement: 1 Expected: 1
+Car: 2 HR: 1639.83 Placement: 3 Expected: 3
+Car: 3 HR: 1638.76 Placement: 2 Expected: 4
 
 Running match 47...
 
-Adding score 39.90 to car 0
-Adding score 36.36 to car 1
-Adding score 32.69 to car 2
-Adding score 28.90 to car 3
+Adding score 13.74 to car 0
+Adding score 31.65 to car 1
+Adding score 19.84 to car 2
+Adding score 51.83 to car 3
 
 New HR
-Car: 0 HR: 1326.04 Placement: 1 Expected: 1
-Car: 1 HR: 1215.00 Placement: 2 Expected: 2
-Car: 2 HR: 1098.47 Placement: 3 Expected: 3
-Car: 3 HR: 976.25 Placement: 4 Expected: 4
+Car: 0 HR: 1656.79 Placement: 4 Expected: 2
+Car: 1 HR: 1706.85 Placement: 1 Expected: 1
+Car: 2 HR: 1659.67 Placement: 3 Expected: 3
+Car: 3 HR: 1690.59 Placement: 2 Expected: 4
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1326.04 Placement: 1 Expected: 1
-Car: 1 HR: 1215.00 Placement: 2 Expected: 2
-Car: 2 HR: 1098.47 Placement: 3 Expected: 3
-Car: 3 HR: 976.25 Placement: 4 Expected: 4
+Car: 0 HR: 1656.79 Placement: 3 Expected: 4
+Car: 1 HR: 1706.85 Placement: 2 Expected: 1
+Car: 2 HR: 1659.67 Placement: 4 Expected: 3
+Car: 3 HR: 1690.59 Placement: 1 Expected: 2
 
 Running match 48...
 
-Adding score 40.51 to car 0
-Adding score 36.92 to car 1
-Adding score 33.19 to car 2
-Adding score 29.34 to car 3
+Adding score 30.08 to car 0
+Adding score 25.75 to car 1
+Adding score 13.93 to car 2
+Adding score 48.17 to car 3
 
 New HR
-Car: 0 HR: 1366.55 Placement: 1 Expected: 1
-Car: 1 HR: 1251.92 Placement: 2 Expected: 2
-Car: 2 HR: 1131.66 Placement: 3 Expected: 3
-Car: 3 HR: 1005.59 Placement: 4 Expected: 4
+Car: 0 HR: 1686.86 Placement: 3 Expected: 4
+Car: 1 HR: 1732.60 Placement: 2 Expected: 1
+Car: 2 HR: 1673.60 Placement: 4 Expected: 3
+Car: 3 HR: 1738.75 Placement: 1 Expected: 2
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1366.55 Placement: 1 Expected: 1
-Car: 1 HR: 1251.92 Placement: 2 Expected: 2
-Car: 2 HR: 1131.66 Placement: 3 Expected: 3
-Car: 3 HR: 1005.59 Placement: 4 Expected: 4
+Car: 0 HR: 1686.86 Placement: 4 Expected: 3
+Car: 1 HR: 1732.60 Placement: 3 Expected: 2
+Car: 2 HR: 1673.60 Placement: 2 Expected: 4
+Car: 3 HR: 1738.75 Placement: 1 Expected: 1
 
 Running match 49...
 
-Adding score 41.11 to car 0
-Adding score 37.47 to car 1
-Adding score 33.69 to car 2
-Adding score 29.78 to car 3
+Adding score 14.06 to car 0
+Adding score 19.91 to car 1
+Adding score 53.26 to car 2
+Adding score 32.16 to car 3
 
 New HR
-Car: 0 HR: 1407.66 Placement: 1 Expected: 1
-Car: 1 HR: 1289.39 Placement: 2 Expected: 2
-Car: 2 HR: 1165.35 Placement: 3 Expected: 3
-Car: 3 HR: 1035.37 Placement: 4 Expected: 4
+Car: 0 HR: 1700.93 Placement: 4 Expected: 3
+Car: 1 HR: 1752.51 Placement: 3 Expected: 2
+Car: 2 HR: 1726.86 Placement: 2 Expected: 4
+Car: 3 HR: 1770.91 Placement: 1 Expected: 1
 
-Placement for car 0: 1
-Placement for car 1: 2
-Placement for car 2: 3
-Placement for car 3: 4
-Car: 0 HR: 1407.66 Placement: 1 Expected: 1
-Car: 1 HR: 1289.39 Placement: 2 Expected: 2
-Car: 2 HR: 1165.35 Placement: 3 Expected: 3
-Car: 3 HR: 1035.37 Placement: 4 Expected: 4
+Car: 0 HR: 1700.93 Placement: 1 Expected: 4
+Car: 1 HR: 1752.51 Placement: 3 Expected: 2
+Car: 2 HR: 1726.86 Placement: 4 Expected: 3
+Car: 3 HR: 1770.91 Placement: 2 Expected: 1
 
 Running match 50...
 
-Adding score 41.72 to car 0
-Adding score 38.02 to car 1
-Adding score 34.19 to car 2
-Adding score 30.23 to car 3
+Adding score 83.24 to car 0
+Adding score 20.19 to car 1
+Adding score 14.13 to car 2
+Adding score 26.33 to car 3
 
 New HR
-Car: 0 HR: 1449.38 Placement: 1 Expected: 1
-Car: 1 HR: 1327.42 Placement: 2 Expected: 2
-Car: 2 HR: 1199.54 Placement: 3 Expected: 3
-Car: 3 HR: 1065.60 Placement: 4 Expected: 4
+Car: 0 HR: 1784.17 Placement: 1 Expected: 4
+Car: 1 HR: 1772.70 Placement: 3 Expected: 2
+Car: 2 HR: 1740.99 Placement: 4 Expected: 3
+Car: 3 HR: 1797.25 Placement: 2 Expected: 1
 

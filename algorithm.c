@@ -198,7 +198,8 @@ void run_algorithm(Car *match, int num_cars, FILE *result) {
         match[i].score = match[i].score / (.5 + (match[i].place - match[i].expected) * .5);
       }
     }*/
-    match[i].score /= sqrt(match[i].score);
+    //printf("score %d and sqrt total %d\n", match[i].score, total);
+    match[i].score /= sqrt(total);
 
     fprintf(result, "Adding score %.2f to car %d\n", match[i].score, i);
     match[i].HR = match[i].score + match[i].HR;
