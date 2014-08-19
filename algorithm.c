@@ -119,39 +119,7 @@ void compare(Car *one, Car *two, int total, FILE *result) {
   else {
     one->score += .30 * pool;
   }
-  //Higher ranked car
-  /*if(one->HR > two->HR) {
-    //Came in better placement, expected
-    if(place_diff < 0) {
-      one->score += .65 * pool;
-    }
-    //Came behind lower car, upset
-    else {
-      one->score += .25 * pool;
-    }
-  }
-  //Lower or equal ranked car
-  else if(one->HR <= two->HR){
-    //Came behind better car, expected
-    if(place_diff > 0) {
-      one->score += .35 * pool;
-    }
-    //Came ahead of better car, upset
-    else {
-      one->score += .75 * pool;
-    }
-  }*/
-  //Equal HR
-  /*else {
-    //This car won
-    if(place_diff < 0) {
-      one->score += .70 * pool;
-    }
-    //This car lost
-    else {
-      one->score += .30 * pool;
-    }
-  }*/
+
   printf("%.2f new score\n", one->score);
 }
 
@@ -184,21 +152,9 @@ void run_algorithm(Car *match, int num_cars, FILE *result) {
 
   //fprintf(result, "Average: %.2f\n", average);
   for(i = 0; i < num_cars; i++) {
-    if(match[i].expected > match[i].place) {
+    /*if(match[i].expected > match[i].place) {
       match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .5));
-    }
-
-    /*if(deviation < 0) {
-      if(match[i].expected > match[i].place) {
-        match[i].score = match[i].score * (.5 + (match[i].expected - match[i].place) * .5);
-      }
-    }
-    else {
-      if(match[i].expected < match[i].place) {
-        match[i].score = match[i].score / (.5 + (match[i].place - match[i].expected) * .5);
-      }
     }*/
-    //printf("score %d and sqrt total %d\n", match[i].score, total);
     match[i].score /= sqrt(total);
 
     fprintf(result, "Adding score %.2f to car %d\n", match[i].score, i);
