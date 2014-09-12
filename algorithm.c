@@ -10,12 +10,17 @@
 #define ADD_CAR 6
 #define REMOVE_CAR 7
 #define QUIT 8
+#define SILVER 50
+#define GOLD 100
+#define PLATINUM 225
+#define DIAMOND 400
 /* Struct for car data, contains whether car has been intialized,
  * it's hidden rank, score gain, placement in match, and expected
  * placement
  */
 typedef struct {
   int init;
+  int placements;
   double HR;
   double score;
   int place;
@@ -39,8 +44,16 @@ void add_car(Car *match, int car) {
   printf("Enter initial rank for car %d: ", car);
   scanf("%lf", &match[car].HR);
   match[car].init = 1;
+  match[car].placements = -1;
+  while(match[car].placements < 0 || match[car].placements > 5) {
+    printf("Enter number of placement matches this car has completed (max 5 placements): ");
+    scanf("%d", &match[car].placements);
+    if(match[car].placements < 0|| match[car].placements > 5) {
+      printf("You can only have up to a max of 5 placements!\n");
+    }
+  }
 }
-/*Check for duplicate rankings*/
+/*Check for duplicate rankings so expected would be the same*/
 int check_same_HR(Car *match, int num_cars) {
   int i, j, same = num_cars, checked = 0;
   for(i = 0; i < num_cars; i++) {
@@ -109,17 +122,56 @@ void compare(Car *one, Car *two, int total, FILE *result) {
   if(!rank_diff) {
     rank_diff = 1;
   }
-  percentage = one->HR / total;
-  percentage = 1 - percentage;
-  pool *= percentage;
-  //fprintf(result, "Percentage: %.2f Pool: %.2f\n", percentage, pool);
-  if(place_diff < 0) {
-    one->score += .70 * pool;
+  if(one->placements > 5) {
+    percentage = one->HR / total;
+    percentage = 1 - percentage;
+    pool *= percentage;
+    //This car came beat car two
+    if(place_diff < 0) {
+      one->score += .70 * pool;
+    }
+    //This car lost to car two
+    else {
+      one->score -= .30 * pool;
+    }
   }
   else {
-    one->score += .30 * pool;
+    one->placements++;
+    if(place_diff < 0) {
+      if(two->HR / DIAMOND >= 1) {
+        one->score += .40 * pool;
+      }
+      else if(two->HR / PLATINUM >= 1) {
+        one->score += .50 * pool;
+      }
+      else if(two->HR / GOLD >= 1) {
+        one->score += .60 * pool;
+      }
+      else if(two->HR / SILVER >= 1) {
+        one->score += .70 * pool;
+      }
+      else {
+        one->score += .75 * pool;
+      }
+    }
+    else {
+      if(two->HR / DIAMOND >= 1) {
+        one->score -= .30 * pool;
+      }
+      else if(two->HR / PLATINUM >= 1) {
+        one->score -= .40 * pool;
+      }
+      else if(two->HR / GOLD >= 1) {
+        one->score -= .50 * pool;
+      }
+      else if(two->HR / SILVER >= 1) {
+        one->score -= .60 * pool;
+      }
+      else {
+        one->score -= .70 * pool;
+      }
+    }
   }
-
   printf("%.2f new score\n", one->score);
 }
 
@@ -127,39 +179,26 @@ void compare(Car *one, Car *two, int total, FILE *result) {
 void run_algorithm(Car *match, int num_cars, FILE *result) {
   int i, j, total = 0;
   double average, deviation;
-  //Calculate average
-  /*for(i = 0; i < num_cars; i++) {
-    average += match[i].HR;
-  }
-  average /= num_cars;*/
   for(i = 0; i < num_cars; i++) {
     total += match[i].HR;
   }
-  //fprintf(result, "Average: %.2f\n", average);
   for(i = 0; i < num_cars; i++) {
-    /*deviation = match[i].HR - average;
-    if(!deviation) {
-      deviation = 1;
-    }*/
     for(j = 0; j < num_cars; j++) {
       if(i != j) {
         compare(&match[i], &match[j], total, result);
       }
     }
-    //match[i].score = sqrt(match[i].score);
     printf("\n");
   }
 
-  //fprintf(result, "Average: %.2f\n", average);
   for(i = 0; i < num_cars; i++) {
-    /*if(match[i].expected > match[i].place) {
-      match[i].score = match[i].score * (1 + ((match[i].expected - match[i].place) * .5));
-    }*/
     match[i].score /= sqrt(total);
-
     fprintf(result, "Adding score %.2f to car %d\n", match[i].score, i);
     match[i].HR = match[i].score + match[i].HR;
     match[i].score = 0;
+    if(match[i].HR < 10) {
+      match[i].HR = 10;
+    }
   }
   fprintf(result, "\nNew HR\n");
 }
@@ -215,7 +254,7 @@ void print_options() {
 int main(int argc, char* argv[]) {
   FILE *result = fopen("result", "w+");
   Car match[MAX_CARS] = {{0}, {0}, {0}, {0}};
-  int num_cars = 0, choice, match_count = 0, rounds, i, j;
+  int num_cars = 0, choice, match_count = 0, rounds, match_data_init = 0, i, j;
   do {
     print_options();
     printf("Enter option: ");
@@ -238,10 +277,14 @@ int main(int argc, char* argv[]) {
         }
         break;
       case RUN_MATCH:
-        //match_count++;
-        fprintf(result, "Running match %d...\n\n", ++match_count);
-        run_match(match, num_cars, result);
-        expected_place(match, num_cars);
+        if(!match_data_init){
+          fprintf(result, "Running match %d...\n\n", ++match_count);
+          run_match(match, num_cars, result);
+          expected_place(match, num_cars);
+        }
+        else {
+          printf("Initialize match data\n");
+        }
         break;
       case SHOW_STATUS:
         show_status(match, num_cars, result);
